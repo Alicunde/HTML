@@ -18,6 +18,7 @@ import Dropdown from '../../components/Dropdown'
 import Selector from '../../components/Selector'
 import Select from '../../components/Select'
 import Checkbox from '../../components/Checkbox'
+import Div from '../../components/Div'
 import Rating from '../../components/Rating'
 import Autocomplete from '../../components/Autocomplete'
 import Textarea from '../../components/Textarea'
@@ -86,7 +87,7 @@ import Pixelate from '../../components/Pixelate'
 import Circle from '../../components/Circle'
 import Layout from '../../components/Layout'
 
-const components = {Layout,Pixelate,Circle,Track,Hover,Steps,Cart,Choice,Progress,Dropdown,Selector,Select,Checkbox,Rating,Autocomplete,Textarea,Input,Color,Submit,Radio,Range,Limit,Ranges,Opter,Danger,Switch,Explorer,Colored,Number,Password,Search,Grid,Alert,Message,Slogan,Tooltip,Loader,Shadows,Blur,Background,Filterable,List,Comments,Gallery,Bricks,Articles,Products,Timeline,Profiles,Table,Chat,Button,Target,Tabs,Accordion,Modal,Carrousel,Slide,Foot,Pagination,Menu,Breadcrumb,Buttons,Text,Article,Product,Profile,Card,Prices,Meter,Counter,Clearfix,}; 
+const components = {Div,Layout,Pixelate,Circle,Track,Hover,Steps,Cart,Choice,Progress,Dropdown,Selector,Select,Checkbox,Rating,Autocomplete,Textarea,Input,Color,Submit,Radio,Range,Limit,Ranges,Opter,Danger,Switch,Explorer,Colored,Number,Password,Search,Grid,Alert,Message,Slogan,Tooltip,Loader,Shadows,Blur,Background,Filterable,List,Comments,Gallery,Bricks,Articles,Products,Timeline,Profiles,Table,Chat,Button,Target,Tabs,Accordion,Modal,Carrousel,Slide,Foot,Pagination,Menu,Breadcrumb,Buttons,Text,Article,Product,Profile,Card,Prices,Meter,Counter,Clearfix,}; 
 class Module extends Component {
     constructor(props) {
         super(props);

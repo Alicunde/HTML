@@ -7,8 +7,6 @@ Defining this repository is tricky. It is not a framework. I hope you like it an
 
 I really appreciate if you leave me a star, this repository is free and they don't have any kind of license. I have simply created it to play with the HTML.
 
-
-
 ### [Selector](components/Selector)
 #### HTML + CSS
 
@@ -33,6 +31,16 @@ Okay, the native HTML Range is too basic. Reason why it is necessary to use any 
 <div class="Range">
     <input type="range" min="0" max="10" step="1" value="5">
 </div>
+```
+
+### [Div](components/Div)
+#### HTML + CSS
+
+The reason for this component is to demonstrate the capacity of the DIV pseudo-elements. Dynamic layouts oriented to customize.
+
+![alt text](navigator/public/components/Div/presentation.jpg)
+```
+<div></div>
 ```
 
 ### [Slide](components/Slide)
@@ -277,6 +285,14 @@ Field with letter limitation built using JavaScript.
 
 Switch field based on a radio type field. Icons generated directly with CSS3.
 
+![alt text](navigator/public/components/Switch/presentation.jpg)
+```
+<div class="Switch">
+    <input type="checkbox" name="Switch" id="Switch">
+    <label for="Switch">I have a bike</label>
+</div>
+```
+
 ### [Colored](components/Colored)
 #### HTML + CSS
 
@@ -442,8 +458,6 @@ This component is in this repository to demonstrate the existing Blur capabiliti
 #### HTML + CSS
 
 Nested list with a very useful schematic design for administrations. It has an alternative design for printing and responsive capabilities. Its CSS applies styles through inheritance, allowing embedding alternative content without fear of design problems.
-
-![alt text](presentation.jpg)
 
 ![alt text](navigator/public/components/List/presentation.jpg)
 ```
@@ -929,4 +943,14 @@ This component is very crazy. It consists of a circular input field based on a m
         <option value="1"></option>
     </select>
 </div>
+```
+
+### [Background](components/Background)
+#### HTML + CSS
+
+Basically a DIV with a background with the possibility of adding a description based on the DIV title. Built to demonstrate the potential of pseudo-elements.
+
+![alt text](navigator/public/components/Pixelate/presentation.jpg)
+```
+<div class="Background" title="This is a pseudo-element"></div>
 ```

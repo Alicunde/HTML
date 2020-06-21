@@ -1,0 +1,155 @@
+/* General */
+    :root{ 
+        --background:repeating-linear-gradient(45deg, #fff, #fff 10px, rgba(255,255,0,1) 10px, rgba(255,255,0,1) 20px);
+        --alternative:repeating-linear-gradient(45deg, #fff, #fff 10px, rgba(0,69,255,1) 10px, rgba(0,69,255,1) 20px);
+        --transparency:repeating-linear-gradient(45deg, rgba(0,0,0,0), rgba(0,0,0,0) 10px, rgba(0,69,255,1) 10px, rgba(0,69,255,1) 20px)}
+    body{ padding: 20px; background: rgb(228, 228, 228); max-width: 900px; margin: 0 auto;}
+/* General */
+/* Fonts */
+    h1{ box-shadow: 10px 10px 0px 0px #bbb;; background: #000; display: inline-block; color: #fff; height: 70px; width: 200px; text-align: center; line-height:70px; font-weight: 100; font-size: 20px; margin-top: 40px;}
+    h1 strong{ font-weight: bold;}
+    h3 a{ position: absolute; background: #FFF; color: #000; padding:10px 20px; right:20px;;top:85px; font-size: 14px; font-weight: 100; margin-top: 10px}
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+   body * { font-family: 'Open Sans', sans-serif; }
+   body{ position: relative;}
+   #Test > div{ box-shadow: 0px 2px 22px rgba(0,0,0,0.1); background-color: rgba(255, 255, 255, 1);}
+    p{ display: inline; line-height: 30px; font-size:20px;  color: #ccc; 
+        box-shadow: 0 0 0 #ccc, 0 0 #ccc;background: #ccc;
+       
+        clear: both;
+    }
+    b{ color: #000; display: block; padding:30px; margin: 0; border:none}
+    b i{ margin-right: 30px; color: #fff; width: 50px; height: 50px; box-shadow: 10px 10px 0px 0px #bbb;; background: #000; display: inline-block; line-height: 50px; text-align: center;}
+/* Images */
+    *:after,*:before{ background-size: cover; background-position: center center; background-image: var(--background);}
+    #Test > div:after{ background-image: var(--alternative);}
+/* Zero */
+    .Zero{ margin: 0 auto; padding: 5%; box-sizing: border-box;}
+/* One */
+    .One{ position: relative;margin: 0 auto; padding:5% 5% 5% 55%; box-sizing: border-box;}
+    .One:after{ position: absolute; content: ""; display: block; left: 0; top: 0; bottom: 0; right: 50%; }
+/* Two */
+    .Two{ position: relative; margin: 0 auto; padding: 5% 55% 5% 5%; box-sizing: border-box;}
+    .Two:after{ position: absolute; content: ""; display: block; left: 50%; top: 0; bottom: 0; right: 0; }
+/* Three */
+    .Three{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 30% 5% 30%; background-image: var(--background); box-sizing: border-box;}
+    .Three:before{z-index: -1; background: #fff; width:50%; position: absolute; left: 25%;content: ""; display: block; height: 100%; top: 0;}
+/* Four */
+    .Four{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 50% 5% 10%; background-image: var(--background); box-sizing: border-box;}
+    .Four:before{z-index: -1; background: #fff; width:50%; position: absolute; left: 5%;content: ""; display: block; height: 100%; top: 0;}
+/* Five */
+    .Five{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 10% 5% 50%; background-image: var(--background); box-sizing: border-box;}
+    .Five:before{z-index: -1; background: #fff; width:50%; position: absolute; right: 5%;content: ""; display: block; height: 100%; top: 0;}
+/* Six */
+    .Six{ margin: 3% auto; position: relative; padding: 5% 5% 5% 50%; box-sizing: border-box;}
+    .Six:before{width:50%; position: absolute; left: -5%;content: ""; display: block; height: 110%; top: -5%;}
+/* Seven */
+    .Seven{  margin: 0 auto; position: relative; padding: 5% 50% 5% 5%; box-sizing: border-box;}
+    .Seven:before{ width:50%; position: absolute; right: -5%;content: ""; display: block; height: 110%; top: -5%;}
+/* Eight */
+    .Eight{ column-gap: 50%; columns: 2; z-index: 1; margin: 0 auto; position: relative; padding: 5% 5% 5% 5%; box-sizing: border-box;}
+    .Eight:before{ width:40%; position: absolute; left: 30%;content: ""; display: block; height: 100%; top: 0%;}
+/* Nine */
+    .Nine{ column-gap: 50%; columns: 2; z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 5%; box-sizing: border-box;}
+    .Nine:before{ width:40%; position: absolute; left: 30%;content: ""; display: block; height: 110%; top: -5%;}
+/* Ten */
+    .Ten{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 5%; box-sizing: border-box;}
+    .Ten:before{ float: left; margin:0 2% 2% 0; width:40%;content: ""; clear: both; display: block; height:240px; }
+/* Eleven */
+    .Eleven{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 5%; box-sizing: border-box;}
+    .Eleven:before{ float: right; margin: 0 0 2% 2%; width:40%;content: ""; clear: both; display: block; height:240px; }
+/* Twelve */
+    .Twelve{ overflow: hidden; z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 5%; box-sizing: border-box;}
+    .Twelve:before{ float: left; margin:0 0 2% 0; width:100%;content: ""; clear: both; display: block; height:240px; }
+    .Twelve:after{ float: right; margin:2% 0 0 0; width:100%;content: ""; clear: both; display: block; height:240px; }
+/* Thirteen */
+    .Thirteen{ overflow: hidden; z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 5%; box-sizing: border-box;}
+    .Thirteen:before{ margin:0 0 2% 0; width:50%;content: ""; clear: both; display: block; height:240px; }
+/* Fourteen */
+    .Fourteen{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 5%; box-sizing: border-box;}
+    .Fourteen:before{ float: left;   margin:0 5% 2% -10%; width:50%;content: ""; clear: both; display: block; height:240px; }
+/* Fifteen */
+    .Fifteen{ z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; padding-top: 250px;  box-sizing: border-box;}
+    .Fifteen:before{  position: absolute; border-right: 25px solid #fff; box-sizing: border-box; left: 0px; top: 0px;  width:50%;content: ""; display: block; height:200px; }
+    .Fifteen:after{  position: absolute;border-left: 25px solid #fff; box-sizing: border-box; right:0px; top: 0px;  width:50%;content: ""; display: block; height:200px; }
+/* Sixteen */
+    .Sixteen{ z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; padding-top: 250px;  box-sizing: border-box;}
+    .Sixteen:before{  position: absolute; border-right: 25px solid #fff; box-sizing: border-box; left: 0px; top: 0px;  width:70%;content: ""; display: block; height:200px; }
+    .Sixteen:after{  position: absolute;border-left: 25px solid #fff; box-sizing: border-box; right:0px; top: 0px;  width:30%;content: ""; display: block; height:200px; }
+/* Seventeen */
+    .Seventeen{ z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; padding-top: 250px;  box-sizing: border-box;}
+    .Seventeen:before{  position: absolute; border-right: 25px solid #fff; box-sizing: border-box; left: 0px; top: 0px;  width:70%;content: ""; display: block; height:200px; }
+    .Seventeen:after{  position: absolute;border-left: 25px solid #fff; box-sizing: border-box; right:0px; top: 0px;  width:30%;content: ""; display: block; height:200px; }
+/* Eighteen */
+    .Eighteen{ z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; padding-top: 500px;  box-sizing: border-box;}
+    .Eighteen:before{  position: absolute;  left: 0px; top: 0px;  width:100%;content: ""; display: block; height:200px; }
+    .Eighteen:after{  position: absolute; right:0px; top: 250px;  width:100%;content: ""; display: block; height:200px; }
+/* Nineteen */
+    .Nineteen{ z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; padding-top: 500px;  box-sizing: border-box;}
+    .Nineteen:before{  position: absolute;  right: 0px; top: 0px;  width:115%;content: ""; display: block; height:200px; }
+    .Nineteen:after{  position: absolute; left:0px; top: 250px;  width:115%;content: ""; display: block; height:200px; }
+/* Twenty */
+    .Twenty{ z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; padding-top: 250px;  box-sizing: border-box;}
+    .Twenty:before{  position: absolute;  left: -15%; top: 0px;  width:65%;content: ""; display: block; height:200px; }
+    .Twenty:after{  position: absolute; right:-25px; top: -25px;  width:55%;content: ""; display: block; height:250px; }
+/* Twentyone */
+    .Twentyone{ z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; padding-top: 350px;  box-sizing: border-box;}
+    .Twentyone:before{  position: absolute;  left: 0; top: 0;  width:55%;content: ""; display: block; height:250px; }
+    .Twentyone:after{  position: absolute; right:0; top: 50px;  width:55%;content: ""; display: block; height:250px; }
+/* Twentytwo */
+    .Twentytwo{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 55%;  box-sizing: border-box;}
+    .Twentytwo:before{  position: absolute;  left: 0; top: 0;  width:50%;content: ""; display: block; height:50%; }
+    .Twentytwo:after{  position: absolute; left:0; top: 50%;  width:50%;content: ""; display: block; height:50%; }
+/* Twentythree */
+    .Twentythree{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 25% 5% 25%;  box-sizing: border-box;}
+    .Twentythree:before{  position: absolute;  left: 0; top: 0;  width:20%;content: ""; display: block; height:100%; }
+    .Twentythree:after{  position: absolute; right:0; top: 0%;  width:20%;content: ""; display: block; height:100%; }
+/* Twentyfour */
+    .Twentyfour{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 25%;  box-sizing: border-box;}
+    .Twentyfour:before{  position: absolute;  left: 0; top: 5%;  width:20%;content: ""; display: block; height:100%; }
+    .Twentyfour:after{  position: absolute; left: -5%; top: -5%;  width:20%;content: ""; display: block; height:100%; }
+/* Twentyfive */
+    .Twentyfive{ z-index: 1;  margin: 0 auto; position: relative; padding: 5% 5% 5% 25%;  box-sizing: border-box;}
+    .Twentyfive:before{  float: right; margin: 0 0 5% 5%;  width:40%;content: ""; display: block; height:200px; }
+    .Twentyfive:after{  position: absolute; left: 0; top:0;  width:20%;content: ""; display: block; height:100%; }
+/* Twentysix */
+    .Twentysix{ background:#333 !important;z-index: 1;  margin: 0 0 10% 0; position: relative; padding: 270px 25% 0% 25%;  box-sizing: border-box;}
+    .Twentysix:before{ background: #fff;z-index: -1; top: 15%; left: 20%; bottom: -50px; right: 20%; position: absolute; content: ""; display: block; }
+    .Twentysix:after{z-index: 2; position: absolute; left: 15%; opacity: 0.8; top:5%;  right:15%;content: ""; display: block; height:200px; }
+/* Twentyseven */
+    .Twentyseven{ background:transparent !important;z-index: 1; box-shadow: none !important;  margin: 0 0 0% 0; position: relative; padding: 100px 5% 100px 50%;  box-sizing: border-box;}
+    .Twentyseven:before{ box-shadow: 0px 2px 22px rgba(0,0,0,0.1);background: #fff;z-index: -1; top:60px; left: 45%; bottom: 60px; margin-left: 0px; right: 0%; position: absolute; content: ""; display: block; }
+    .Twentyseven:after{z-index: -2;background:#333 !important; position: absolute; left: 0%; width: 50%; bottom: 120px; opacity: 0.8; top:0%; content: ""; display: block; }
+/* Twentyeight */
+    .Twentyeight{ position: relative;margin: 0 auto; padding:5%; padding-left:  calc(5% + 200px); box-sizing: border-box;}
+    .Twentyeight:after{ position: absolute; content: ""; display: block; left: 0; top: 0; bottom: 0; width: 200px; }
+/* Twentynine */
+    .Twentynine{ position: relative;margin: 0 0 0 auto; padding: 5%; width: 500px; box-sizing: border-box;}
+    .Twentynine:after{ position: absolute; content: ""; display: block; width: 100%; max-width: 500px; top: 0; bottom: 0; right: 500px; }
+/* Thirty */
+    .Thirty{ margin: 0 auto;  padding: 5%; box-sizing: border-box;}
+    .Thirty:before{z-index: 1;margin-bottom: 5%; content: ""; position: -webkit-sticky;position: sticky; width: 100%; left: 0; top: 0px; height: 100px; display: block; }
+/* Thirtyone */
+    .Thirtyone{ margin: 0 auto;  padding: 5%;  box-sizing: border-box;}
+    .Thirtyone:before{z-index: 1;margin-bottom: 5%; content: ""; position: -webkit-sticky;position: sticky; width: 100%; left: 0; top: 0px; height: 100px; display: block; }
+    .Thirtyone:after{z-index: 1;margin-top: 5%; content: ""; width: 100%;  height: 100px; display: block; }
+/* Thirtytwo */
+    .Thirtytwo{ background: #fff; margin: 20px auto; width: 50%;  padding: 5%;  box-sizing: border-box;}
+    .Thirtytwo:before{z-index: -1;margin-bottom: 5%; top: 20px; content: ""; position: -webkit-sticky;position: sticky; width: 200%; margin-left: -50%; margin-top:-20px ; height: 100px; display: block; }
+    .Thirtytwo:after{z-index: 1;margin-top: 5%; content: ""; width: 100%;  height: 100px; display: block; }
+/* Thirtythree */
+    .Thirtythree{ overflow: hidden; z-index: 1;  margin: 0 auto; position: relative; border:50px solid #fff; box-sizing: border-box;}
+    .Thirtythree:before{ background-image: var(--alternative) !important; background-attachment: fixed; margin:0 0 2% 0; width:100%;content: "";display: block; height:240px; }
+    .Thirtythree:after{  background-image: var(--transparency) !important;position: absolute; top:0; right: 0; left: 0; margin:0 0 0 0;content: ""; display: block; height:240px; }
+/* Thirtyfour */
+    .Thirtyfour{z-index: 1; margin: 0 auto; position: relative;  padding: 5% 25% 5% 25%; background: none !important; box-shadow: none !important;  box-sizing: border-box;}
+    .Thirtyfour:before{z-index: -2;margin-bottom: 5%; content: ""; position: -webkit-sticky;position: sticky; width: 200%; margin-bottom: -20px; margin-left: -50%; top: 0px; height: 200px; display: block; }
+    .Thirtyfour:after{z-index: -1;box-shadow: 0px 2px 22px rgba(0,0,0,0.1); margin-top: 5%; content: ""; width: 60%; position: absolute; top:calc(5% + 100px); bottom: 0; left:20%;; background: #fff !important; display: block; }
+/* Thirtyfive */
+    .Thirtyfive{z-index: 1; margin: 0 auto;  position: relative;  padding: 5% 25% 5% 25%; background: none !important; box-shadow: none !important;  box-sizing: border-box;}
+    .Thirtyfive:before{z-index: -1;margin-bottom: 5%; content: ""; position: -webkit-sticky;position: sticky; width: 200%; margin-bottom: 20px; margin-left: -50%; top: 0px; height: 200px; display: block; }
+    .Thirtyfive:after{z-index: -1;margin-bottom: 5%; content: ""; position: absolute; width: 100%; margin-bottom: -20px; margin-left: -25%; bottom: 0px; height: calc(100% - 200px); display: block; }
+/* Thirtysix */
+    .Thirtysix{z-index: 1; margin: 0 auto;  position: relative;  padding: 200px 25% 20px 25%; background: none !important; box-shadow: none !important;  box-sizing: border-box;}
+    .Thirtysix:before{z-index: -1;margin-bottom: 5%; content: ""; width: 100%;  left: 0; top: 0px; position: absolute; height: 200px; display: block; }
+    .Thirtysix:after{z-index: -1;content: ""; position: absolute; width: 100%; margin-left: -25%; bottom: 0px;top: 170px; display: block; }
