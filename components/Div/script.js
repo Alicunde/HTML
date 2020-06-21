@@ -40,10 +40,6 @@ function convert(num) {
   else return convert_millions(num);
 }
 
-//end of conversion code
-
-//testing code begins here
-
 function Div() {
     let html = '';
     const queryString = window.location.search;

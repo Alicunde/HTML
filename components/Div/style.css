@@ -3,24 +3,22 @@
         --background:repeating-linear-gradient(45deg, #fff, #fff 10px, rgba(255,255,0,1) 10px, rgba(255,255,0,1) 20px);
         --alternative:repeating-linear-gradient(45deg, #fff, #fff 10px, rgba(0,69,255,1) 10px, rgba(0,69,255,1) 20px);
         --transparency:repeating-linear-gradient(45deg, rgba(0,0,0,0), rgba(0,0,0,0) 10px, rgba(0,69,255,1) 10px, rgba(0,69,255,1) 20px)}
-    body{ padding: 20px; background: rgb(228, 228, 228); max-width: 900px; margin: 0 auto;}
-/* General */
+    body{ padding: 20px; background: rgb(228, 228, 228); position: relative; max-width: 900px; margin: 0 auto;}
 /* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    body * { font-family: 'Open Sans', sans-serif; }
+/* Header */
     h1{ box-shadow: 10px 10px 0px 0px #bbb;; background: #000; display: inline-block; color: #fff; height: 70px; width: 200px; text-align: center; line-height:70px; font-weight: 100; font-size: 20px; margin-top: 40px;}
     h1 strong{ font-weight: bold;}
     h3 a{ position: absolute; background: #FFF; color: #000; padding:10px 20px; right:20px;;top:85px; font-size: 14px; font-weight: 100; margin-top: 10px}
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-   body * { font-family: 'Open Sans', sans-serif; }
-   body{ position: relative;}
-   #Test > div{ box-shadow: 0px 2px 22px rgba(0,0,0,0.1); background-color: rgba(255, 255, 255, 1);}
-    p{ display: inline; line-height: 30px; font-size:20px;  color: #ccc; 
-        box-shadow: 0 0 0 #ccc, 0 0 #ccc;background: #ccc;
-       
-        clear: both;
-    }
+/* Box */
+    #Test > div{ box-shadow: 0px 2px 22px rgba(0,0,0,0.1); background-color: rgba(255, 255, 255, 1);}
+/* Divisor */
     b{ color: #000; display: block; padding:30px; margin: 0; border:none}
     b i{ margin-right: 30px; color: #fff; width: 50px; height: 50px; box-shadow: 10px 10px 0px 0px #bbb;; background: #000; display: inline-block; line-height: 50px; text-align: center;}
-/* Images */
+/* Text */
+    p{ display: inline; line-height: 30px; font-size:20px;  color: #ccc; box-shadow: 0 0 0 #ccc, 0 0 #ccc;background: #ccc;clear: both; }
+/* Backgrounds */
     *:after,*:before{ background-size: cover; background-position: center center; background-image: var(--background);}
     #Test > div:after{ background-image: var(--alternative);}
 /* Zero */
