@@ -1,7 +1,7 @@
 ![alt text](navigator/public/screen.jpg)
 
 # HTML | [DEMO](http://html.systems/)
-### HTML +  CSS + JS
+### Public Domain
 
 Defining this repository is tricky. It is not a framework. I hope you like it and if you can improve a component leave us an issue.
 
