@@ -1,82 +1,82 @@
 /* Layout */
-    .Selector {
-        /* Layout */
-            display: flex; flex-wrap:wrap;
-        /* Sizes */
-            padding: 20px;
-    }
-    .Selector input {
-        /* Layout */
-            position: relative; flex-grow: 1;
-        /* Reset */
-            outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none;
-        /* Sizes */
-            border-radius: 4px; background-size: cover; min-width: 120px; margin: 0px 2px 4px;
-    }
+.Selector {
+    /* Layout */
+        display: flex; flex-wrap:wrap;
+    /* Sizes */
+        padding: 20px;
+}
+.Selector input {
+    /* Layout */
+        position: relative; flex-grow: 1;
+    /* Reset */
+        outline: none; appearance: none; -webkit-appearance: none; -moz-appearance: none;
+    /* Sizes */
+        height:50px;border-radius: 4px; background-size: cover; min-width: 120px; margin: 0px 2px 4px;
+}
 /* Hidden */
-    .Selector input::after { content: attr(title); display: block;}
+.Selector input::after { content: attr(title); display: block;}
 /* Label */
-    .Selector input::after {
-        /* Layout */
-            position: relative; cursor: pointer; display: block; background-color: rgba(50, 50, 50, 0.8);
-        /* Text */
-            text-align: center; text-transform: uppercase; letter-spacing: 2px; color: #fff; font-size: 10px;
-        /* Sizes */
-            padding:20px 2px; border-radius: 4px;
-    }
+.Selector input::after {
+    /* Layout */
+        position: relative; cursor: pointer; display: block; background-color: rgba(50, 50, 50, 0.8);
+    /* Text */
+        text-align: center; text-transform: uppercase; letter-spacing: 2px; color: #fff; font-size: 10px;
+    /* Sizes */
+        line-height:50px; border-radius: 4px;
+}
 /* Hover */
-    .Selector input:hover:after{ background: #333;}
-    .Selector input:checked:after{ letter-spacing:4px;  background: #111;}
+.Selector input:hover:after{ background: #333;}
+.Selector input:checked:after{ letter-spacing:4px;  background: #111;}
 /* Animation */
-    .Selector input:after{ 
-        -webkit-transition: all 200ms ease-in-out;
-        -moz-transition: all 200ms ease-in-out;
-        -o-transition: all 200ms ease-in-out;
-        transition: all 200ms ease-in-out;
-    }
+.Selector input:after{ 
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
 /* Active */
-    .Selector input:checked:before {
-        /* Position */
-            position: absolute; right: -10px; top: -10px;
-        /* Layout */
-            z-index: 3; content: ""; display:block; box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
-        /* Background */
-            background: #fff; background-size: cover;
-            background-image: url("data:image/svg+xml;utf8,<svg enable-background='new 0 0 512 512' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path fill='rgb(139, 139, 255)' d='m437.019 74.98c-48.352-48.351-112.639-74.98-181.019-74.98-68.381 0-132.668 26.629-181.02 74.98-48.351 48.352-74.98 112.64-74.98 181.02s26.629 132.667 74.98 181.019c48.352 48.352 112.64 74.981 181.02 74.981s132.667-26.629 181.019-74.98c48.352-48.353 74.981-112.64 74.981-181.02s-26.629-132.667-74.981-181.02zm-58.713 120.093-143.065 143.066c-2.929 2.929-6.768 4.393-10.606 4.393-3.839 0-7.678-1.464-10.607-4.393l-80.334-80.333c-5.858-5.857-5.858-15.354 0-21.213 5.857-5.858 15.355-5.858 21.213 0l69.728 69.727 132.458-132.46c5.857-5.858 15.355-5.858 21.213 0s5.858 15.355 0 21.213z'/></svg>");
-        /* Sizes */
-            border-radius:15px; height: 30px; width: 30px;
-    }
+.Selector input:checked:before {
+    /* Position */
+        position: absolute; right: -10px; top: -10px;
+    /* Layout */
+        z-index: 3; content: ""; display:block; box-shadow: 0px 1px 3px rgba(0,0,0,0.4);
+    /* Background */
+        background: #fff; background-size: cover;
+        background-image: url("data:image/svg+xml;utf8,<svg enable-background='new 0 0 512 512' viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path fill='rgb(139, 139, 255)' d='m437.019 74.98c-48.352-48.351-112.639-74.98-181.019-74.98-68.381 0-132.668 26.629-181.02 74.98-48.351 48.352-74.98 112.64-74.98 181.02s26.629 132.667 74.98 181.019c48.352 48.352 112.64 74.981 181.02 74.981s132.667-26.629 181.019-74.98c48.352-48.353 74.981-112.64 74.981-181.02s-26.629-132.667-74.981-181.02zm-58.713 120.093-143.065 143.066c-2.929 2.929-6.768 4.393-10.606 4.393-3.839 0-7.678-1.464-10.607-4.393l-80.334-80.333c-5.858-5.857-5.858-15.354 0-21.213 5.857-5.858 15.355-5.858 21.213 0l69.728 69.727 132.458-132.46c5.857-5.858 15.355-5.858 21.213 0s5.858 15.355 0 21.213z'/></svg>");
+    /* Sizes */
+        border-radius:15px; height: 30px; width: 30px;
+}
 /* Animation (animate.css) */
-    @-webkit-keyframes Selector {
-        from, 20%, 40%, 60%, 80%, to{
-            -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        }
-        0% { opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3);}
-        20% { -webkit-transform: scale3d(1.1, 1.1, 1.1); transform: scale3d(1.1, 1.1, 1.1); }
-        40% { -webkit-transform: scale3d(0.9, 0.9, 0.9); transform: scale3d(0.9, 0.9, 0.9); }
-        60% { opacity: 1; -webkit-transform: scale3d(1.03, 1.03, 1.03); transform: scale3d(1.03, 1.03, 1.03);}
-        80% { -webkit-transform: scale3d(0.97, 0.97, 0.97); transform: scale3d(0.97, 0.97, 0.97); }
-        to { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+@-webkit-keyframes Selector {
+    from, 20%, 40%, 60%, 80%, to{
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
-    @keyframes Selector {
-        from, 20%, 40%, 60%,  80%, to {
-            -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-        }
-        0% { opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3);}
-        20% { -webkit-transform: scale3d(1.1, 1.1, 1.1); transform: scale3d(1.1, 1.1, 1.1);}
-        40% { -webkit-transform: scale3d(0.9, 0.9, 0.9); transform: scale3d(0.9, 0.9, 0.9); }
-        60% { opacity: 1; -webkit-transform: scale3d(1.03, 1.03, 1.03); transform: scale3d(1.03, 1.03, 1.03);}
-        80% { -webkit-transform: scale3d(0.97, 0.97, 0.97); transform: scale3d(0.97, 0.97, 0.97);}
-        to { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+    0% { opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3);}
+    20% { -webkit-transform: scale3d(1.1, 1.1, 1.1); transform: scale3d(1.1, 1.1, 1.1); }
+    40% { -webkit-transform: scale3d(0.9, 0.9, 0.9); transform: scale3d(0.9, 0.9, 0.9); }
+    60% { opacity: 1; -webkit-transform: scale3d(1.03, 1.03, 1.03); transform: scale3d(1.03, 1.03, 1.03);}
+    80% { -webkit-transform: scale3d(0.97, 0.97, 0.97); transform: scale3d(0.97, 0.97, 0.97); }
+    to { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+}
+@keyframes Selector {
+    from, 20%, 40%, 60%,  80%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     }
-    .Selector input:checked:before {
-        -webkit-animation-name: Selector;
-        animation-name: Selector;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-    }
+    0% { opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3);}
+    20% { -webkit-transform: scale3d(1.1, 1.1, 1.1); transform: scale3d(1.1, 1.1, 1.1);}
+    40% { -webkit-transform: scale3d(0.9, 0.9, 0.9); transform: scale3d(0.9, 0.9, 0.9); }
+    60% { opacity: 1; -webkit-transform: scale3d(1.03, 1.03, 1.03); transform: scale3d(1.03, 1.03, 1.03);}
+    80% { -webkit-transform: scale3d(0.97, 0.97, 0.97); transform: scale3d(0.97, 0.97, 0.97);}
+    to { opacity: 1; -webkit-transform: scale3d(1, 1, 1); transform: scale3d(1, 1, 1); }
+}
+.Selector input:checked:before {
+    -webkit-animation-name: Selector;
+    animation-name: Selector;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
 /* Fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-    *{ font-family: 'Open Sans', sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+*{ font-family: 'Open Sans', sans-serif; }
