@@ -1,0 +1,22 @@
+
+/* General */
+    .Checkbox {white-space:nowrap; padding: 20px; } 
+    .Checkbox *,.Checkbox *:before, .Checkbox *:after { box-sizing: inherit; } 
+/* Input */
+    .Checkbox input[type='checkbox'] { width: 21px;  } 
+    .Checkbox input[type='checkbox'] + label { white-space:normal; font-size: 14px; line-height: 23px; display: inline-block;margin-left: 15px; vertical-align: top; cursor: pointer; } 
+    .Checkbox input[type='checkbox'] + label b{ white-space: nowrap;margin-right: 5px;font-weight: 600;}
+    .Checkbox input[type='checkbox'] + label span{ white-space: nowrap;  color: #666;}
+    .Checkbox input[type='checkbox']:after {border:1px solid #fff; border-top: none; border-left: none; position: absolute; content: ''; display: block; width: 4px; height: 10px; left: 8px; opacity: 0; top: 4px;  -webkit-transform: scale(2); transform: scale(2);-webkit-transform:scale(0.5) rotate(50deg); transform:scale(0.5)  rotate(50deg); -webkit-transition: opacity .3s, -webkit-transform .6s cubic-bezier(.2, .85, .32, 1.2); transition: opacity .3s, -webkit-transform .6s cubic-bezier(.2, .85, .32, 1.2); transition: transform .6s cubic-bezier(.2, .85, .32, 1.2), opacity .3s; transition: transform .6s cubic-bezier(.2, .85, .32, 1.2), opacity .3s, -webkit-transform .6s cubic-bezier(.2, .85, .32, 1.2);}
+    .Checkbox input[type='checkbox'] {-webkit-appearance: none; -moz-appearance: none; height: 21px; outline: none; display: inline-block; vertical-align: top; position: relative; margin: 0; cursor: pointer; border: 1px solid #000; background: #fff; border-radius: 4px; -webkit-transition: background .3s, border-color .3s, box-shadow .2s; transition: background .3s, border-color .3s, box-shadow .2s; } 
+/* Disabled */
+    .Checkbox input[type='checkbox']:disabled { opacity: 0.8; } 
+/* Focus */
+    .Checkbox input[type='checkbox']:focus { box-shadow: 0 0 0 2px rgba(157, 157, 157, 0.5); } 
+    .Checkbox input[type='checkbox']:checked { background: #444; } 
+    .Checkbox input[type='checkbox']:checked:after { opacity: 1;-webkit-transform: scale(1) rotate(45deg); transform: rotate(1) rotate(45deg); } 
+/* Selection */
+    .Checkbox { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Checkbox { font-family: 'Open Sans', sans-serif; }

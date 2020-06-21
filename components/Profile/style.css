@@ -1,0 +1,28 @@
+.Profile{ background: #fff;margin:5%; padding: 160px 20px 20px 140px; position: relative;}
+.Profile > div:first-child{ position: absolute; left: 0; top: 0; right: 0;  display: block; height: 150px; background: #ccc url(./images/header.jpg); background-size: cover; background-position: center;}
+.Profile > div:nth-child(2){ height: 100px; width: 100px; position: absolute; left: 20px; top: 130px; border:4px solid #fff; border-radius: 100px; background: #fff url(./images/selfie.jpg); background-size: cover;  display: block;}
+.Profile li{ display: inline-block;}
+.Profile strong{ white-space: nowrap; font-weight: 600; font-size: 1.1em; display: block; }
+.Profile i{ font-style: normal; display: block; }
+.Profile p{ color: #555; font-size: 0.9em; display: block; }
+.Profile ol{margin: 0; white-space: nowrap; padding: 0; position: absolute; right: 30px; top: 125px;; display: block; }
+.Profile ol li{ margin-right: 10px;}
+.Profile ol li > *{ border-radius: 30px; font-size: 0; color: #444; display: block; text-align: center;text-decoration: none;box-shadow: 0px 2px 5px rgba(0,0,0,0.1); height: 50px; width: 50px; line-height: 50px; background: #fff;;}
+.Profile ol li a:after{ content: "\f0e0"; font-size: 19px; font-weight: 900; font-family: 'Line Awesome Free';}
+.Profile ol li del:after{ content: "\f234";font-size: 19px; font-weight: 900; font-family: 'Line Awesome Free';}
+.Profile ul{ display: block; padding: 0;margin: 0;}
+.Profile ul li {margin-right: 10px; color: #aaa; }
+.Profile ul li b{ color: #000; }
+
+
+@media only screen and (max-width:550px) {
+    .Profile{ margin: 0;}
+    .Profile > div:nth-child(2){ left: 10px;}
+    .Profile ol{ left: 10px; right: auto; top: 220px;}
+}
+@media only screen and (max-width:380px) {
+    .Profile ol{ left: 140px; right: auto; top: 170px;}
+    .Profile ol li > *{ height: 40px; width: 40px; line-height: 40px;}
+    .Profile{ padding-left: 20px; padding-right: 20px;}
+    .Profile > div:nth-child(2){ position: relative; margin-top: -30px; top:auto; left: auto;}
+}

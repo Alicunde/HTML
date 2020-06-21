@@ -1,0 +1,14 @@
+/* Disable Appearance */
+    .Number input[type=number]{ -webkit-appearance: textfield;-moz-appearance: textfield;appearance: textfield;}
+    .Number input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{ -webkit-appearance: none;}
+/* Input */
+    .Number {margin: 20px; display: inline-flex;}
+    .Number input{ text-align: center; -webkit-appearance: none; margin: 0; outline: none; resize: vertical;  font-size:0.9em; box-sizing: border-box;  padding:4px 15px; width:80px; border-radius:0px; border:1px solid #ddd;}
+/* Buttons */
+    .Number *{ box-sizing: border-box;}
+    .Number button{ border:1px solid #ddd;outline: 0;-webkit-appearance: none;background-color: rgb(247, 247, 247);align-items: center;justify-content: center;width: 40px;height: 2rem;cursor: pointer;margin: 0;position: relative;}
+    .Number button:active{ background: rgb(233, 233, 233);}
+    .Number button:after,.Number button:before{ display: inline-block;position: absolute;content: '';width: 0.7rem;height: 2px;background-color: #212121;transform: translate(-50%,-50%);}
+    .Number button:first-child{ border-radius: 5px 0px 0px 5px; border-right: none;}
+    .Number button:last-child{ border-radius: 0px 5px 5px 0px; border-left: none;}
+    .Number button:last-child:after{ transform: translate(-50%,-50%) rotate(90deg);}

@@ -1,0 +1,37 @@
+name: Node.js CI
+
+on: [push] 
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+        working-directory: navigator
+    - run: npm install --prefix navigator
+    - run: npm run build --if-present --prefix navigator
+    - run: git reset --hard
+    
+    - name: List output files
+      run: ls
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
+        ftp-server: ${{ secrets.FTP_SERVER }}
+        # FTP account username
+        ftp-username: ${{ secrets.FTP_USER }}
+        # FTP account password
+        ftp-password: ${{ secrets.FTP_PASS }}
+        local-dir: navigator/build
+        # The local folder to copy, defaults to root project folder
+

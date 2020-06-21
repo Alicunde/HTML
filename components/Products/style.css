@@ -1,0 +1,29 @@
+/* General */
+    .Products > ul { margin: 0px; padding: 4%; display: flex; box-sizing: border-box; flex-basis: auto; flex-grow: 1; align-items: flex-start; flex-wrap: wrap}
+    .Products > ul > li { margin: 1% 2% 30px; min-width: 300px;overflow: hidden; display: block; position: relative; flex: 1; } 
+/* Content */
+    .Products > ul > li strong{ display: block; position: relative; overflow: hidden;;}
+    .Products > ul > li > a { cursor: pointer; text-decoration: none; position: relative; font-size: 12px; display: block;  padding:0px; margin: 0px; float: right; color: #333; } 
+/* Titles */
+    .Products > ul > li > a > h4 { text-transform: uppercase; letter-spacing: 2px; font-size: .9em; margin: 0; padding: 1.2rem 1.2rem 0px; display: block; } 
+    .Products > ul > li > a > h3 { font-weight: 100; font-size: 2em;margin: 0; ; padding: 0rem 1.1rem 0px; display: block; } 
+/* Description */
+    .Products > ul > li > a > p { font-size: 1em; font-weight: normal; margin: 0; color: #666; padding: 0rem 1.2rem 0px; display: block; } 
+    .Products > ul > li > a > p:last-child { font-size: 1.2em; font-style: normal; padding: 0.4rem 1.2rem 0px; display: block; } 
+    .Products > ul > li > span { z-index: 1;  text-align: center; background: #000; color:#fff;line-height: 1; display: block;font-weight: 100;z-index: 12; padding: 4px 7px;  position: absolute; left: -0.5em; top:-0.5em;; } 
+    .Products > ul > li > a i {font-size: 1.5em; font-style: normal;padding: 0rem 1.2rem 0px;  z-index: 1;  display: block; ; } 
+    .Products > ul > li > p { font-size: 0.8em; line-height: 2; padding:0px 1.2rem 0px; } 
+    .Products > ul > li > em { color: #aaa; position: absolute; bottom: 10px; left: 20px; font-size: 0.8em; font-style: normal;; } 
+/* Prices */
+    .Products > ul > li > p:last-child { padding-bottom: 10px; } 
+/* Discount */
+    .Products > ul > li > a del {position: relative; text-decoration: none; margin-right: 8px; color: rgb(221, 107, 107) ; } 
+    .Products > ul > li > a del:after{ height: 1px; width: 140%; margin-left: -20%; position: absolute; top: 50%; content: ""; display: block; background: rgba(145, 145, 145, 0.5);z-index: -1;}
+/* Picture */
+    .Products > ul > li picture{ overflow: hidden; position: relative; display: block;}
+    .Products > ul > li > a img { background: #000; display: block; width: 100%;margin: 0; padding: 0; display: block; border:none; } 
+/* Video */
+    .Products > ul > li video{z-index: 1; position: absolute; position: absolute; left: 50%;  top: 50%;max-height: 100%; transform: translate(-50%, -50%); }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Products{ font-family: 'Open Sans', sans-serif; }

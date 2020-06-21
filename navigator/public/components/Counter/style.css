@@ -1,0 +1,15 @@
+/* General */
+    .Counter{ padding: 20px 20px;}
+/* List */
+    .Counter ul{display: block; white-space: nowrap; margin: 0; padding: 0;}
+    .Counter li{ position: relative; display: inline-block;  box-sizing: border-box; margin: 0; padding:0px 20px; border-right: 1px solid #ccc;}
+    .Counter li:last-child{ border-right: none;}
+/* Item */
+    .Counter li b{text-align:center;font-weight: 300; padding-left: 0px; font-size: 1.5em; display: block;}
+    .Counter li span{ text-align:center; font-size:12px; padding-left: 0px; display: block; color: #aaa;}
+    .Counter li i{ position: absolute; height: 50px; width: 50px; line-height: 50px; font-size: 30px; left: 10px; top: 50%; margin-top: -25px;}
+    .Counter li i ~ b{ text-align: left;font-size: 1.5em;  padding-left: 50px;}
+    .Counter li i ~ b ~ span{ text-align: left;  padding-left: 50px;}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Counter { font-family: 'Open Sans', sans-serif; }

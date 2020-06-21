@@ -1,0 +1,39 @@
+/* General */
+    .Comments{padding:20px;}
+    .Comments *{ margin: 0;padding: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+    .Comments a{ color: #000;text-decoration: none;}
+/* List */
+    .Comments ul{ position: relative; list-style-type: none;}
+    .Comments > ul{ position: relative;}
+    .Comments ul:before{ content: '';width: 1px;height: 100%;background: #c7cacb;position: absolute;left: 32px;top: 0;}
+    .Comments ul ul:before{ left: 25px;}
+    .Comments ul:after{ content: '';position: absolute;background: #8b8bff;bottom: 0;left: 26px;width: 7px;height: 7px;border: 3px solid #dee1e3;-webkit-border-radius: 50%;-moz-border-radius: 50%;border-radius: 50%;}
+    .Comments ul ul:after{ left: 19px;}
+    .Comments ul ul{ padding-left: 0;clear: both;padding-top: 15px;}
+/* Item */
+    .Comments > ul > li:last-child{ padding-bottom: 20px;}
+    .Comments li{ margin-bottom: 15px;display: block;padding-left: 90px;position: relative;}
+    .Comments li li{ padding-left: 65px;}
+    .Comments li::after { display: block; clear: both; content: ""; }
+/* Selfie */
+    .Comments img{ position: absolute;left: 0;top: 0;width: 65px;height: 65px;z-index: 99;display: block;float: left;border-radius: 42px;box-shadow: 0 1px 2px rgba(0,0,0,.2);overflow: hidden;}
+    .Comments ul ul img{ width: 50px;height: 50px;}
+/* Text */
+    .Comments li > a{ padding: 10px 12px;font-size: 0.8em; font-weight: 600; }
+    .Comments li > div i{ float: right;margin-left: 14px;position: relative;top: 2px;color: #a6a6a6;cursor: pointer;-webkit-transition: color .3s ease;-o-transition: color .3s ease;transition: color .3s ease;}
+    .Comments li > div i:hover{ color: #03658c;}
+    .Comments li > time{ color: #999;font-size: 13px; margin-left: 10px;}
+    .Comments li > p{margin-top: 5px; background: #fff;padding: 12px;box-shadow: 0 1px 2px rgba(0,0,0,.2);font-size: 13px;line-height: 20px; color: #595959;border-radius: 10px;}
+    .Comments li > p:first-child{ margin-top: 10px;}
+    .Comments li > div h6{ font-size: 0.8em; display: inline;}
+/* Reponsive */
+    @media (max-width: 500px) {
+        .Comments img,.Comments ul ul img{ top: -5px;left: -10px; width: 30px;height: 30px;}
+        .Comments ul:before{  display: none;}
+        .Comments ul:after{  display: none;}
+        .Comments li > div h6{ padding-left: 33px;}
+        .Comments ul li{ padding-left: 5%; }
+    }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Comments { font-family: 'Open Sans', sans-serif; }

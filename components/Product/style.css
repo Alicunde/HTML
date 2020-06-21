@@ -1,0 +1,73 @@
+/* General */
+    .Product{ overflow: hidden;margin: 5%; padding: 5%; padding-left: 10%; position: relative;}
+/* Thumbs */
+    .Product ol{position: relative;margin: 0; padding: 0;float: left; width: 50%; }
+    .Product ol li{ display: block; margin: 0; padding: 0;}
+    .Product ol li input{ display: none;}
+    .Product ol li img{ display: none;}
+    .Product ol li input:checked + img{ display: block;}
+    .Product ol li:first-child{ display: block;}
+    .Product ol img{ display: block; width: 100%; }
+/* Gallery */
+    .Product ul{margin: 0; padding: 0; position: absolute; left: 0; width: 10%; }
+    .Product ul li{ display: block; padding:0 5% 5% ; }
+    .Product ul:hover li{ opacity: 0.8;}
+    .Product ul:hover li:hover{ opacity: 1}
+    .Product ul img{ cursor: pointer; display: block; width: 100%; }
+/* Details */
+    .Product div{ padding:0 0 0 2em; box-sizing: border-box; float: left; width: 50%; }
+    /* Discount */
+        .Product strong{ position: absolute; background: #eee; right: 3%; top: 4%;; display: block; line-height: 3em; border-radius: 100%; color: rgb(0, 0, 0); padding: 0; text-align: center; width: 3em; margin: 0; font-size: 1em; font-weight: normal;}
+        .Product strong::after{ content: "%"; color: #aaa;}
+    /* Titles */
+        .Product h3{ padding: 0rem 0 0; text-transform: uppercase; letter-spacing: 2px; font-weight: 100; margin: 0; font-size: 0.8em;}
+        .Product h1{ padding: 0rem 0;margin: 0; font-size: 1.4em;}
+        .Product h2{ padding: .5rem 0;margin: 0; font-size: 1em; font-weight: normal;}
+    /* Descriptions */
+        .Product q{display: block; padding: .5rem 2rem;margin: 0; font-size: 1em; font-weight: normal;}
+        .Product p{ display: block;line-height:1.8em; padding: .5rem 0;margin: 0; font-size: 0.8em; font-weight: normal;}
+    /* Price */
+        .Product em{ font-style: normal; display: block; padding: .1rem 0;margin: 0; font-size: 1em; font-weight: normal;}
+        .Product em del{ color: lightcoral; font-style: normal;}
+    /* Form */
+        .Product select{ border-radius: 0; border:1px solid #000; text-indent: 10px; padding: 0px; width: 200px; display: block; margin: .5rem 0;font-size: 1em; font-weight: normal;}
+        .Product select {
+            /* Appearance */
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            /* Arrow */
+                background: transparent;
+                background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='50' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+                background-repeat: no-repeat;
+            /* Layout */
+                background-position-x: 100%; background-position-y: 3px; border: none; border:1px solid #aaa; padding: 5px 0px; text-indent: 15px; outline: none;
+        }
+        .Product input{
+             /* Appearance */
+                -webkit-appearance: none;
+                -moz-appearance: none;
+             /* Layout */
+                border-radius:0;color: #fff; background: #000;line-height: 2; text-transform: uppercase; letter-spacing: 2px; border:none; width: 200px; display: block; margin: 1rem 0;font-size: 1em; font-weight: normal;
+        }
+/* Animation */
+    .Product ol li input:checked + img{ -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: Product; animation-name: Product; }
+    @-webkit-keyframes Product { 
+        from {opacity: 0; -webkit-transform: translate3d( 10%,0, 0); transform: translate3d(10%,0, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 
+    }
+    @keyframes Product { 
+        from {opacity: 0; -webkit-transform: translate3d( 10%,0, 0); transform: translate3d( 10%,0, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 
+    }
+/* Responsive */
+    @media only screen and (max-width:600px) {
+        .Product{ padding: 0;}
+        .Product strong{ background: #fff; right: auto; left:20px; top:20px;}
+        .Product ul{ position: relative;width: auto; left: auto; top: auto;}
+        .Product ul li{ padding: 0; display: inline-block;margin: 4px 4px 0 0 ; width: 15%; }
+        .Product ol{ width: 100%;}
+        .Product div{ margin:0 0;padding: 5% 0 ; box-sizing: border-box; width: 100%;}
+    }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Product{ font-family: 'Open Sans', sans-serif; }

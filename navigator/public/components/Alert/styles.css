@@ -1,0 +1,28 @@
+
+/* General */
+    .Alert,div[role=alert]{ margin: 20px; display: block;color: #000;border: 1px rgba(204,204,204,.399) solid;padding: .375rem .85rem;font-size: .8rem;font-weight: 400;line-height: 1.4;letter-spacing: .1em;border-radius: .3rem;outline: 0;background: rgba(235,235,235,.4);}
+/* Icons */
+    .Alert:before,div[role=alert]:before{ vertical-align: middle;line-height: .9;font-size: 1.2em;opacity: .6;margin-right: .6rem;font-family: 'Line Awesome Free';font-weight: 900;}
+    .Alert:after,div[role=alert]:after{ vertical-align: middle;line-height: .9;font-size: 1.2em;opacity: .6;margin-left: .6rem;font-family: 'Line Awesome Free';font-weight: 900;}
+/* Colors */
+    /* Default */
+        .Alert,div[role=alert]{ border-color: #fa6;color: #d57526;background: rgb(255,170,102,.1);}
+        .Alert:before,div[role=alert]:before{ content: "\f071";}
+    /* Warning */
+        .Alert.warning,div[role=alert].warning{ border-color: #fa6;color: #d57526;background: rgb(255,170,102,.1);}
+        .Alert.warning:before,div[role=alert].warning:before{ content: "\f071";}
+    /* Disabled */
+        .Alert.disabled,div[role=alert].disabled{ border-color: #ccc;color: #999;background: rgba(230,230,230,.1);}
+        .Alert.disabled:before,div[role=alert].disabled:before{ content: "\f05e";}
+    /* Danger */
+        .Alert.danger,div[role=alert].danger{ border-color: #fb6867;color: #fb6867;background: rgb(251,104,103,.1);}
+        .Alert.danger:before,div[role=alert].danger:before{ content: "\f714";}
+    /* Information */
+        .Alert.information,div[role=alert].information{ border-color: #1a6eff;color: #1a6eff;background: rgb(26,110,255,.1);}
+        .Alert.information:before,div[role=alert].information:before{ content: "\f05a";}
+    /* Success */
+        .Alert.success,div[role=alert].success{ border-color: #3fc493;color: #11ae75;background: rgba(63,196,147,.2);}
+        .Alert.success:before,div[role=alert].success:before{ content: "\f00c";}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Alert,div[role=alert]{ font-family: 'Open Sans', sans-serif; }

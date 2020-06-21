@@ -1,0 +1,140 @@
+[
+    {
+        "title": "Data"
+    },
+    {
+        "special": 1,
+        "status": 1,
+        "version": "4.0.1",
+
+        "name": "Text",
+        "path": "Text",
+        "property": {
+            "html": true,
+            "icon": true,
+            "css": true,
+            "responsive": true,
+            "print": true
+        },
+        "rules": {},
+        "information": "Vale, somos adultos, todos escribimos y creamos ingentes cantidades de páginas webs con textos. El texto es la forma más común de comunicar una idea. Ideas transformadas en palabras, palabras con un significado. Entonces definamos ese significado. No hay que ser un genio si consideramos que la mayor cantidad de tags HTML existentes se centran en el formateo de texto."
+    },
+    {
+        "version": "4.2.7",
+
+        "status": 1,
+        "name": "Article",
+        "path": "Article",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "css": true
+        },
+        "css":{
+            "Text":true
+        },
+        "option": {
+            "picture": true,
+            "title": true,
+            "description": true,
+            "quote": true,
+            "text": true,
+            "author": true,
+            "tags": true,
+            "more": true
+        },
+        "description": ""
+    },
+    {
+        "version": "4.5.1",
+        "status": 1,
+        "name": "Product",
+        "path": "Product",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "js": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "slogan":true,
+            "thumbnails": true,
+            "gallery": true,
+            "price": true,
+            "description": true,
+            "sales": true,
+            "discount": true,
+            "form": true,
+            "selector": true,
+            "brand": true
+        },
+        "information": ""
+    },
+    {
+        "version": "4.1.6",
+        "status": 1,
+        "name": "Profile",
+        "path": "Profile",
+        "property": {
+            "html": true,
+            "icon": true,
+            "responsive": true,
+            "img": true,
+            "css": true
+        },
+        "option": {},
+        "description": ""
+    },
+    {
+        "version": "4.2.1",
+
+        "status": 1,
+        "name": "Prices",
+        "path": "Prices",
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        },
+        "information": ""
+    },
+    {
+        "version": "1.0.4",
+
+        "status": 1,
+        "name": "Meter",
+        "path": "Meter",
+        "property": {
+            "html": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "descriptions": true,
+            "icons": true
+        },
+        "description": "Este componente este componente intenta parecer al objeto Meter de HTML, pero en realidad es una lista semanatica. No hay ninguna necesidad moral de hacerlo de otro modo."
+    },
+    {
+        "version": "1.0.4",
+
+        "status": 1,
+        "path": "Counter",
+        "name": "Counter",
+        "property": {
+            "html": true,
+            "responsive": true,
+            "icon": true,
+            "css": true
+        },
+        "option": {
+            "descriptions": true,
+            "icons": true
+        },
+        "information": "Tipico contador de elementos."
+    }
+]

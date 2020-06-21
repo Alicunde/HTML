@@ -1,0 +1,21 @@
+.Track{ margin: 20px; position: relative; }
+/* Input */
+    .Track input{ border-radius: 10px; margin:0px 0; width: 100%; display: block; }
+    .Track input[type=range]{ transform: translateY(attr(value)); outline: none; height: 20px; cursor: pointer; appearance: none; -webkit-appearance: none;-moz-appearance: none;}
+/* Webkit */
+    .Track  input[type=range]::-webkit-slider-thumb { box-shadow: 0px 1px 3px #00000077, 0px 0px 1px #0d0d0d71; height: 24px; box-sizing: border-box; width: 24px; border:5px solid rgb(139, 139, 255); border-radius: 24px; background: #fff; cursor: pointer; -webkit-appearance: none;}
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .Track  input[type=range] { overflow: hidden; height: 20px;-webkit-appearance: none;background-color: #ddd;}
+        .Track  input[type=range]::-webkit-slider-thumb { height: 20px; width: 20px;box-shadow: -1010px 0 0 1000px rgb(139, 139, 255);}
+    }
+/* Moz */
+    .Track input[type=range]::-moz-focus-outer { border: 0;}
+    .Track input[type=range]::-moz-range-progress { background-color: transparent;}
+    .Track input[type=range]::-moz-range-track { background-color: transparent;}
+    .Track input[type=range]::-moz-range-thumb { box-shadow: -1010px 0 0 1000px rgb(139, 139, 255); height: 20px; box-sizing: border-box; width: 20px;border:5px solid rgb(139, 139, 255); border-radius: 24px;background: #fff; cursor: pointer; -webkit-appearance: none;}
+/* Ms */
+    .Track input[type=range]::-ms-fill-lower { background: #2a6495; border: 0.2px solid #010101; border-radius: 2.6px; box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;}
+    .Track input[type=range]::-ms-fill-upper { background: #3071a9; border: 0.2px solid #010101; border-radius: 2.6px; box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;}
+    .Track input[type=range]::-ms-thumb { box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; border: 1px solid #000000; height: 36px; width: 16px; border-radius: 3px; background: #ffffff; cursor: pointer; }
+    .Track  input[type=range]::-ms-fill-lower { background-color: rgb(139, 139, 255); }
+    .Track  input[type=range]::-ms-fill-upper { background-color: transparent; }

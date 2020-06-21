@@ -1,0 +1,18 @@
+/* General */
+    .Rating{ margin: 20px; border:1px solid #ddd; border-radius: 5px; position: relative; white-space: nowrap; display: inline-block; padding-right: 50px; outline: none; resize: vertical; font-size:0.9em; box-sizing: border-box; ; padding:0px 40px 0px 15px; border:1px solid #ddd }
+/* Label */
+    .Rating b{ float: left; line-height: 35px;padding-right: 10px; height: 35px; font-size: 12px; display: inline-block;border-right: 1px solid #ddd; font-weight: normal; margin-right: 10px;}
+/* Stars */
+    .Rating input{ width: 0px; height: 0; -webkit-appearance: none;}
+    .Rating label{margin: 0; padding: 0; display: inline-block; color: rgb(63, 116, 196); vertical-align: middle; font-size: 1.5em; line-height: 35px; cursor: pointer;}
+/* Checked */
+    .Rating label + input:checked + * { color: #ddd;}
+    .Rating label + input:checked + * + *{ color: #ddd;}
+    .Rating label + input:checked + * + * + *{ color: #ddd;}
+    .Rating label + input:checked + * + * + * + *{ color: #ddd;}
+    .Rating label + input:checked + * + * + * + * + *{ color: #ddd;}
+    .Rating label + input:checked + * + * + * + * + * + *{ color: #ddd;}
+    .Rating label + input:checked + * + * + * + * + * + * + *{ color: #ddd;}
+    .Rating label + input:checked + * + * + * + * + * + * + *{ color: #ddd;}
+/* Value */
+    .Rating input:checked:after{ padding:0px 10px; text-align: center; top: 5px; position: absolute; right: 5px; line-height: 25px ; width: 10px; border:1px solid #ddd; border-radius: 4px; content: attr(value); display: block;}

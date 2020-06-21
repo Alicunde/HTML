@@ -1,0 +1,26 @@
+/* General */
+    .Search { margin: 20px; position: relative;}
+    .Search div{z-index: 2; position: relative;}
+    .Search input{ appearance: textfield; outline: none; resize: vertical; line-height: 14px; font-size:14px; box-sizing: border-box; padding:10px 15px;  width: 100%;border-radius: 5px; border:1px solid #ddd; }
+    .Search input:focus,.Search input:hover{ border-color: #000; }
+    .Search input:focus{ box-shadow: 0px 0px 0px 3px rgba(0,0,0,0.06);}
+    .Search p{ padding: 0px; line-height: 30px; position: absolute; right:4px; top: 50%; margin-top: -15px; background: none; outline: none; border:none;height: 30px;  ; display: block;}
+/* Appearance */
+    .Search input[type="search"]::-webkit-search-decoration,
+    .Search input[type="search"]::-webkit-search-cancel-button,
+    .Search input[type="search"]::-webkit-search-results-button,
+    .Search input[type="search"]::-webkit-search-results-decoration { -webkit-appearance:none;}
+/* Submit */
+    .Search button[type='submit']{ cursor: pointer; text-transform: uppercase; color: #fff; background: #444; border-radius: 4px; float: right; padding: 0px 10px; line-height: 30px;outline: none; border:none;height: 30px;  ; display: block;}
+    .Search button[type='submit']:hover{ background: rgb(113, 125, 213); color: #fff;}
+/* Reset */
+    .Search button[type='reset']:hover{ color: #444;}
+    .Search button[type='reset']{ color: #999; cursor: pointer; text-transform: uppercase; display: none;padding: 0px 10px; margin-right: 0px; line-height: 31px; float: left; background: none; outline: none; border:none;height: 30px;  ;}
+    .Search button[type='reset'] i{ font-style: normal; font-size:20px;line-height: 30px;}
+    .Search button[type='submit'] i{ font-style: normal;-webkit-transform: scaleX(-1); transform: scaleX(-1); font-size:20px; margin: 0px 10px; line-height: 30px;}
+    .Search strong{ position: absolute; right: 50px; top: 0;; display: block;}
+    .Search input:valid + p button[type='reset']{ display: block }
+/* Responsive */
+    @media only screen and (max-width:500px) {
+        .Search input:valid + p button[type='reset'] { display: none;}
+    }

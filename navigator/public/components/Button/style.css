@@ -1,0 +1,42 @@
+
+button,.Button{
+    /* Selection Disable */
+        -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;
+    /* Styles */
+        font-family : inherit; background-color: transparent; border: 1px rgba(204, 204, 204, 0.399) solid;text-decoration: none; padding: .375rem .85rem; font-size:0.8rem; font-weight: normal; line-height: 1.4; letter-spacing: 0.1em; border-radius: .3rem;outline: none; background:rgba(235, 235, 235, 0.4); margin:.5em; display: inline-block; color: #000; text-align: center; vertical-align: middle;
+}
+/* Focus */
+    button:focus,.Button:focus{ box-shadow: 0 0 0 .2rem rgba(0, 0, 0, 0.1);}
+/* Icons */
+    button[class]:before,.Button:before{  vertical-align:middle; line-height: .9; font-size: 1.2em;  margin-right:.6rem; ;}
+    button[class]:after,.Button:after{  vertical-align:middle; line-height: .9; font-size: 1.2em;  margin-left:.6rem; ;}
+/* Types */
+    /* Danger */
+        button.danger{ position: relative; border-color:#fb6867; color:#fb6867; background:rgb(251, 104, 103,0.1)}
+        button.danger:before{ content:""; border-bottom: 15px #fb676794 solid; transform: translateY(-1px) translateX(0.3px); border-left: 9px solid transparent; border-right: 9px solid transparent; display: inline-block; width: 0px;;}
+        button.danger:after{ content:"!"; position: absolute; left: 12px; color: #fff; font-size: 0.8em; font-weight: bold; margin-top: -4px; top: 50%;}
+    /* Warning */
+        button.warning{ border-color:#ffaa66; color:#d57526; background:rgb(255, 170, 102,0.1)}
+        button.warning:before{ font-family: "open sans"; line-height: 15px; text-align: center; letter-spacing: 0; font-size: 1em;  content:"!"; border-radius: 10px; border:1px solid #d57526; height: 14px; width: 14px; display: inline-block;}
+    /* Link */
+        button.link,.Button.link{ position: relative;}
+        button.link:after,.Button.link:after{   content:""; height: 8px; display: inline-block; transform: translateY(-1px) rotate(135deg); border-top: 2px solid #aaa; border-left: 2px solid #aaa; width: 8px;;}
+    /* Information */
+        button.information{ border-color:#1a6eff; color:#1a6eff; background:rgb(26, 110, 255,0.1)}
+        button.information:before{ font-family: "open sans"; line-height: 15px; text-align: center; letter-spacing: 0; font-size: 1em;  content:"i"; border-radius: 10px; border:1px solid #1a6eff; height: 14px; width: 14px; display: inline-block;}
+    /* Next */
+        button.next{ border-color:#1a6eff; color:#1a6eff; background:rgb(26, 110, 255,0.1)}
+        button.next:after{   content:""; height: 8px; display: inline-block; transform: translateY(-1px) rotate(135deg); border-top: 2px solid #1a6eff; border-left: 2px solid #1a6eff; width: 8px;;}
+    /* Back */
+        button.back{ border-color:#1a6eff; color:#1a6eff; background:rgb(26, 110, 255,0.1)}
+        button.back:before{   content:""; height: 8px; display: inline-block; transform: translateY(-1px) rotate(-45deg); border-top: 2px solid #1a6eff; border-left: 2px solid #1a6eff; width: 8px;;}
+    /* Success */
+        button.success{ border-color:#3fc493; color:#11ae75; background:rgba(63, 196, 147, 0.2)}
+        button.success:before{  content:""; border-left:2px solid #11ae75; width: 10px; height: 5px; display: inline-block; margin-right: 10px; transform: translateY(-3px) rotate(-45deg); border-bottom: 2px solid #11ae75;}
+    /* Cancel */
+        button.cancel{ position: relative;}
+        button.cancel:before{ content:""; height: 2px; display: inline-block; transform: translateY(-1px) rotate(-45deg); background: #aaa; width: 14px;;}
+        button.cancel:after{ content:""; position: absolute; top: 50%; margin-top: -0px; left: 4px; height: 2px; display: inline-block; transform: translateY(-1px) rotate(45deg); background: #aaa; width: 14px;;}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    button,.Button { font-family: 'Open Sans', sans-serif; }

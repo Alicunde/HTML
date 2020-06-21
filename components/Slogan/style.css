@@ -1,0 +1,27 @@
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/* General */
+    .Slogan{overflow: hidden;max-width: 1200px; margin: 0 auto; ; padding:20px;}
+/* Quote */
+    .Slogan q::before{ display: none;}
+    .Slogan q::after{ display: none;}
+    .Slogan q{ display: block; box-sizing: border-box; padding-right: 30px; width: 40%; float: left;}
+    .Slogan q u{ display: block; text-decoration: none; color: rgb(161, 161, 255);padding-bottom: 0.5em;}
+    .Slogan q strong{ font-family: 'Playfair Display', serif; font-size:2.5vw;}
+    .Slogan q strong:after{ height: 2px; background: #000; width: 40px; content: ""; display: block;;margin-top: 10px;margin-left: -10px;}
+    .Slogan q span{ font-weight: 100; display: block; margin-top: 1em;}
+    .Slogan q span b{ font-weight: 100;}
+    .Slogan q span i{ display: block; margin-top: 0em; font-size: .8em; font-style: normal; color: #aaa;}
+    .Slogan q img{max-width: 200px; width: 100%; opacity: 0.6;}
+/* Text */
+    .Slogan p{ margin: 0; padding: 0;line-height: 1.6; width: 60%; float: left;}
+    .Slogan p::first-letter{font-family: 'Playfair Display', serif;margin-right: 0.3em; line-height: 0.8; float: left; font-size: 3.5em;}
+/* Responsive */
+    @media only screen and (max-width:900px) {
+        .Slogan q strong{ font-size: 4vw; line-height: 1.2;}
+    }
+    @media only screen and (max-width:500px) {
+        .Slogan q strong{ font-size: 8vw;}
+        .Slogan p{ width: 100%;}
+        .Slogan q{ border-bottom: 1px solid #ddd;padding-bottom: 5%; margin-bottom: 5%;; width: 100%;}
+    }

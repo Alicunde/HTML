@@ -1,0 +1,6 @@
+.Rules ul{ display: block; margin: 0; padding: 0;}
+.Rules li{padding:3% 3% 3% 3%; color: #fff; box-sizing: border-box; margin-bottom:10px; position: relative;max-width: 700px; background: rgb(0, 0, 0); display: block;}
+.Rules li h3{margin: 0; padding: 0; display: block; font-size: 24px; font-weight: 100;}
+.Rules li h4{margin: 0; padding: 0; display: block; font-size: 17px; font-weight: 100;}
+.Rules li p{margin: 0;line-height: 2; padding: 0; display: block;margin-top: 20px; font-size: 15px; font-weight: 100;}
+.Rules li em{ height: 100%; display: block; width: 50%; background: #aaa; position: absolute; right: 0; top: 0;;;}

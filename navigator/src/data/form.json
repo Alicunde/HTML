@@ -1,0 +1,322 @@
+[
+    {
+        "title": "Form"
+    },
+    {
+        "special": 1,
+
+        "importance": 1,
+        "status": 1,
+        "name": "Selector",
+        "path": "Selector",
+        "version": "4.0.2",
+        "property": {
+            "html": true,
+            "icon": false,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "images": false
+        }
+    },
+    {
+        "importance": 1,
+
+        "special": 1,
+        "status": 1,
+        "version": "4.0.3",
+        "name": "Range",
+        "path": "Range",
+        "property": {
+            "html": true,
+            "css": true
+        },
+        "screenshot": {
+            "chrome": true,
+            "firefox": true,
+            "opera": true,
+            "safari": true
+        }
+    },
+    {
+        "version": "4.0.2",
+
+        "status": 1,
+        "name": "Checkbox",
+        "path": "Checkbox",
+        "property": {
+            "html": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "information": "Un simple checkbox"
+    },
+    
+    {
+        "status": 10,
+        "name": "Autocomplete",
+        "path": "Autocomplete",
+        "property": {
+            "html": true,
+            "js": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "placeholder": true
+        }
+    },
+    {
+        "status": 1,
+        "name": "Progress",
+        "path": "Progress",
+        "version": "4.0.3",
+        "property": {
+            "html": true,
+            "js": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "size": true,
+            "name": true
+        },
+        "information": "Barra de progreso responsive."
+    },
+    {
+        "version": "2.0.5",
+        "status": 1,
+        "name": "Dropdown",
+        "path": "Dropdown",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "information": ""
+    },
+    
+    {
+        "version": "4.0.3",
+
+        "status": 1,
+        "name": "Select",
+        "path": "Select",
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        },
+        "information": "Un simple select con una flecha customizada"
+    },
+    
+    
+    {
+        "version": "1.0.3",
+
+        "status": -1,
+        "name": "Rating",
+        "path": "Rating",
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "description": true
+        }
+    },
+    {
+        "version": "4.0.3",
+        "status": -1,
+        "name": "Number",
+        "path": "Number",
+        "property": {
+            "js": true,
+            "html": true,
+            "css": true,
+            "responsive": true
+        }
+    },
+    {
+        "version": "4.0.5",
+        "status": 1,
+        "name": "Textarea",
+        "path": "Textarea",
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "placeholder": true,
+            "readOnly": true
+        }
+    },
+    {
+        "version": "4.0.5",
+
+        "status": 1,
+        "name": "Input",
+        "path": "Input",
+        "property": {
+            "html": true,
+            "icon": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "placeholder": false,
+            "label": true,
+            "readOnly": false
+        },
+        "information": "Un campo simple"
+    },
+    {
+        "version": "3.0.1",
+        "status": 1,
+        "name": "Submit",
+        "path": "Submit",
+        "property": {
+            "html": true,
+            "icon": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "reset": true,
+            "delete": true
+        },
+        "information": "Botones submit en el pie de un formulario, con el botón reset y el botón eliminar."
+    },
+    {
+        "version": "4.0.3",
+
+        "status": 1,
+        "path": "Radio",
+        "name": "Radio",
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        },
+        
+        "option": {
+            "description": false
+        },
+        "information": "Un Range utra básico"
+    },
+    {
+        "status":1,
+        "name": "Choice",
+        "path": "Choice",
+        "version": "2.0.5",
+
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        }
+    },
+    
+    {
+        "special": 1,
+        "version": "4.0.5",
+        "status": 1,
+        "name": "Track",
+        "path": "Track",
+        "property": {
+            "html": true,
+            "css": true
+        }
+    },
+    {
+        "version": "4.0.1",
+        "status": 1,
+        "name": "Limit",
+        "path": "Limit",
+        "property": {
+            "html": true,
+            "js": true,
+            "css": true
+        }
+    },
+   
+    {
+        "version": "3.0.1",
+
+        "status": 1,
+        "name": "Switch",
+        "path": "Switch",
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "description": false
+        },
+        "information": "Un simple checkbox representado como un Switch"
+    },
+    
+    {
+        "version": "4.0.1",
+
+        "status": 1,
+        "name": "Colored",
+        "path": "Colored",
+        "property": {
+            "html": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+        },
+        "information": "Selector de color con circulos"
+    },
+    {
+        "importance": 4,
+
+        "version": "1.6.1",
+        "status": 1,
+        "name": "Password",
+        "path": "Password",
+        "property": {
+            "icon": true,
+            "js": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "placeholder": true,
+            "quality": true,
+            "viewer": true
+        },
+        "information": "Componente para introducir contraseñas con validador y sistema para mostrar u ocultar el tipo de campo."
+    },
+    {
+        "version": "4.0.2",
+        "status": 1,
+        "name": "Search",
+        "path": "Search",
+        "property": {
+            "html": true,
+            "icon": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "placeholder": true,
+            "reset": true,
+            "submit": true,
+            "icons": true
+        },
+        "information": "Buscador profesional con boton submit y botón reset sin hacer uso de javascript. El botón reset lo eliminamos de versiones movil."
+    }
+]

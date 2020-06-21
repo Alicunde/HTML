@@ -1,0 +1,59 @@
+.Message{ padding: 1em 2.5em 1.6em 9em; background: #fff; margin: 20px; box-shadow: 0px 2px 2px rgba(0,0,0,0.2);}
+/* Text */
+    .Message strong{display: block; color: rgb(85, 208, 134); font-size:1.4em; font-weight: 500; }
+    .Message del{display: block; text-decoration: none; color: rgb(206, 98, 98); font-size:1.4em; font-weight: 500; }
+    .Message span{ display: block; color: rgb(128, 128, 128); line-height: 1.4; font-size:1em; font-weight: normal; }
+    .Message p{ display: block;line-height: 1.5; margin: 0; padding:1rem 0 0;color: rgb(128, 128, 128); font-size:.8em; font-weight: normal; }
+/* Close */
+    .Message code{ cursor: pointer; border-radius: 100%; position: absolute; right: 1em; top: 1em; display: block;;}
+    .Message code:hover{
+        background: rgb(249, 249, 249);
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: AlertClose;
+        animation-name: AlertClose;
+    }
+    .Message code:after{ pointer-events: none; content: "\f00d"; color:rgb(206, 98, 98); font-size: 1.2em;height: 2em; text-align: center; display: block; width: 2em; line-height: 2em; font-family: 'Line Awesome Free'; font-weight: 900; font-style:normal;}
+/* Icon */
+    .Message strong:after{ background: rgb(243, 255, 248); border-radius: 100%;  color:rgb(85, 208, 134); font-size: 1.5em; position: absolute; left:2rem;margin-top: -2.5rem; top: 50%;height: 5rem; text-align: center; width: 5rem; line-height: 5rem;  display: block;font-weight: 900; font-family: 'Line Awesome Free'; content: "\f00c"; }
+    .Message del:after{ background: rgb(255, 249, 249); border-radius: 100%;  color:rgb(206, 98, 98); font-size: 1.5em; position: absolute; left: 2rem;margin-top: -2.5rem; top: 50%;height: 5rem; text-align: center; width: 5rem; line-height: 5rem;  display: block;font-weight: 900; font-family: 'Line Awesome Free'; content: "\f714"; }
+/* Slides */
+    .Message {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-name: Alert;
+        animation-name: Alert;
+    }
+    @-webkit-keyframes Alert { 
+        from {opacity: 0; -webkit-transform: translate3d(0, 10%, 0); transform: translate3d(0, 10%, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 
+    }
+    @keyframes Alert { 
+        from {opacity: 0; -webkit-transform: translate3d(0, 10%, 0); transform: translate3d(0, 10%, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 
+    }
+
+    @-moz-keyframes AlertClose { 100% { -moz-transform: rotate(360deg); } }
+    @-webkit-keyframes AlertClose { 100% { -webkit-transform: rotate(360deg); } }
+    @keyframes AlertClose { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+/* Responsive */
+    @media only screen and (max-width:30em) {
+        .Message{ padding:0.9em 1.5em 1.3em 1.5em; font-size:.8em;}
+        .Message strong:after{ display: none;}
+        .Message del:after{ display: none;}
+    }
+
+/* Print */
+    @media print {
+        .Message code{ display: none;}
+        .Message{ box-shadow: none;}
+    }

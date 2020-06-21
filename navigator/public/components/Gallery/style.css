@@ -1,0 +1,21 @@
+/* General */
+    .Gallery{padding: 20px;}
+/* List */
+    .Gallery ul {margin:0; column-gap: 1em;padding: 0px; -moz-column-gap: 1.5em; -webkit-column-gap: 1.5em; column-gap: 1.5em; column-count:3; -moz-column-count: 3; -webkit-column-count: 3; }
+    .Gallery li { background: #fff; overflow: hidden; position: relative; display: inline-block; margin: 0 0 1.5em;box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); width: 100%; box-sizing: border-box;}
+/* Zoom */
+    .Gallery li i{ position: absolute;z-index: 1; top: 0; right: 0; padding: 1em; color: #fff; text-shadow: 0px 2px 2px black;;}
+/* Image */
+    .Gallery li img{ width: 100%;display: block;}
+    .Gallery li b{margin: 10% 0px 0px 10%;font-weight: 100; font-size:1.1em; display: block;}
+    .Gallery li span{margin: 0px 0px 5% 10%;font-size:.8em; color: #aaa; display: block;}
+/* Link */
+    .Gallery li a{ float: right;font-size:12px; text-decoration: none; color: rgb(0, 0, 0); padding: 3% 10%; display: inline-block; }
+    .Gallery li a:after{font-family: 'Line Awesome Free'; font-weight: 900; margin-bottom: 10px; margin-left: .5em; content: "\f105"; display: inline-block;}
+/* Responsive */
+    @media (max-width: 600px) {
+        .Gallery ul{ column-count:2; -moz-column-count: 2; -webkit-column-count: 2; }
+    }
+    @media (max-width: 500px) {
+        .Gallery ul{ column-count:1; -moz-column-count: 1; -webkit-column-count:1; }
+    }

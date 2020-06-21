@@ -1,0 +1,4 @@
+/* Placeholder */
+    .Tabs .Placeholder{  border-radius: 6px; margin:0px 10px 10px; padding: 20%; color: #fff;text-align: center;  content: "TEST CONTENT"; display: block;}
+    .Tabs .Placeholder:before{ content: "TEST CONTENT";letter-spacing: 2px; font-size: 15px;}
+    .Tabs .Placeholder:after{ content: "CSS INDEPENDIENT"; display: block; font-size: 11px; color: rgba(255,255,255,0.4);}

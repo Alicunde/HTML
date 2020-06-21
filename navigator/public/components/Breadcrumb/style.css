@@ -1,0 +1,21 @@
+/* General */
+    p[role="navigation"]{margin: 20px; white-space: nowrap; overflow: hidden;  overflow: hidden;font-size: 0.8em; line-height: 40px;}
+/* Content */
+    p[role="navigation"] > a{ padding:0px 10px; margin-right: 16px; position: relative; line-height: 40px;text-decoration: none; color: #000;}
+    p[role="navigation"] > a:after{ position: absolute; top: 50%; margin-top: -2px; right: -10px; content: ""; display: inline-block; height: 6px; width: 6px; border:1px solid #aaa; border-top: none; border-left: none; transform: translateY(-1px) rotate(-45deg);}
+    p[role="navigation"] > span{ padding:0px 10px;  color: #000; font-weight: bolder;}
+    p[role="navigation"] > strong { float: left;margin-right: 15px; display: inline-block;}
+    p[role="navigation"] > strong > a{ font-size: 20px; height: 40px; display: block; white-space: nowrap; overflow: hidden; color: transparent; background: url(images/logotype.png);  background-size: contain; width: 100px; background-position: center; background-repeat: no-repeat; line-height: 40px; padding-right:0px;  padding-left: 0px; }
+/* Responsive */
+    @media only screen and (max-width:450px) {
+        p[role="navigation"] > strong{ display: none;}
+    }
+    @media only screen and (max-width:350px) {
+        p[role="navigation"] > span{ display: none;}
+    }
+    @media only screen and (max-width:250px) {
+        p[role="navigation"] { font-size: 0.7em;}
+    }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    p[role="navigation"]{ font-family: 'Open Sans', sans-serif; }

@@ -1,0 +1,29 @@
+.Progress {border-radius: 0px; overflow: hidden; color: rgba(255, 255, 255, 1);margin:20px; position: relative;z-index: 1;background: #ddd; height: 30px; line-height: 30px;}
+.Progress progress{ width: 100%; animation: ProgressAnimation 1s infinite; color: #fff; font-size: 12px; text-align: right; position: absolute;z-index: -1; box-sizing: border-box;  left: 0; top: 0;; background: rgb(101, 101, 101) url(https://www.w3schools.com/colors/colors_picker.asp); height: 30px;;}
+.Progress progress:after{ content:attr(value) "%"; position: absolute; z-index: 100; display: block; text-align: center; top: 0; width: 50px; right: 0; color: #fff;}
+.Progress b{line-height: 30px; margin-left: 10px; font-size: 0.8em; }
+.Progress span{line-height: 30px; margin-left: 10px; font-size: 0.8em; }
+progress::-webkit-progress-value {
+  background:#333;
+    border-radius:0px 0px 0px 0px; 
+    background-size: 100% 100%;
+}
+progress::-moz-progress-bar {
+  background:#333;
+     content:attr(value) "%";
+    border-radius:0px 0px 0px 0px; 
+    background-size: 100% 100%;
+}
+
+progress[value]::-moz-progress-bar{
+  -webkit-transition: width 400ms ease-in-out;
+  -moz-transition: width 400ms ease-in-out;
+  -o-transition: width 400ms ease-in-out;
+  transition: width 400ms ease-in-out;
+}
+progress[value]::-webkit-progress-value{
+    -webkit-transition: width 400ms ease-in-out;
+    -moz-transition: width 400ms ease-in-out;
+    -o-transition: width 400ms ease-in-out;
+    transition: width 400ms ease-in-out;
+  }

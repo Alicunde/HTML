@@ -1,0 +1,49 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@brainhubeu/react-carousel": "^1.16.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "ace-builds": "^1.4.11",
+    "file-saver": "^2.0.2",
+    "iframe-resizer-react": "^1.0.3",
+    "js-beautify": "^1.11.0",
+    "jszip": "^3.4.0",
+    "react": "^16.13.1",
+    "react-ace": "^9.0.0",
+    "react-dom": "^16.13.1",
+    "react-highlight": "^0.12.0",
+    "react-iframe-resizer-super": "^0.2.2",
+    "react-markdown": "^4.3.1",
+    "react-resize-panel": "^0.3.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-split": "^2.0.7",
+    "react-sticky": "^6.0.3",
+    "react-sticky-box": "^0.9.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

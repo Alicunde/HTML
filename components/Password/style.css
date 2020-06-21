@@ -1,0 +1,22 @@
+.Password { margin: 20px; position: relative;}
+.Password div{z-index: 2; position: relative;}
+.Password input{outline: none; resize: vertical; line-height: 14px; font-size:14px; box-sizing: border-box; padding:10px 15px;  width: 100%;border-radius: 5px; border:1px solid #ddd; }
+.Password input:read-only{color: #aaa;}
+.Password  i:hover{ color: rgb(0, 123, 255); }
+.Password  i{cursor: pointer; font-style: normal; text-align: center; display: block; position: absolute;height: 40px; width: 40px; line-height: 40px;top:1px; font-size:20px; right: 10px;}
+.Password  i:before{font-family: 'Line Awesome Free'; }
+.Password input[type='password'] ~ i:before{content: "\f06e"; }
+.Password input[type='text'] ~ i:before{ content: "\f070";}
+.Password p:nth-child(2){ margin-top: 10px;}
+
+.Password p b{ font-weight: normal;}
+.Password p{line-height: 25px; margin: 0px 0px 0px 17px; padding-left: 40px; font-size: 12px; display: none; position: relative;}
+.Password p:after{ height: 30px; overflow: hidden; width: 20px; border:1px solid #ccc;border-right: none; border-top: none; content: ""; display: block; position: absolute; left: 0px; bottom: 50%;  }
+.Password p:before{ height: 6px; top: -50%; background: #000; content: ""; display: block;z-index: 1; position: absolute; width: 6px; left: 21px; top: 50%; margin-top: -4px;; }
+.Password p i{ display: none;line-height: 25px; float: left; margin-right: 5px;}
+.Password p.active{ display: block;}
+.Password p.invalid{ color: rgb(176, 66, 66); }
+.Password p.valid{ color: rgb(60, 201, 123); }
+.Password p.valid span:after{  color:rgb(85, 208, 134); margin-right: 5px; font-family: 'Line Awesome Free'; font-weight: 900; content: "\f00c"; }
+
+.Password p.valid i{ display: block; }

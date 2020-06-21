@@ -1,0 +1,63 @@
+/* General */
+    .Slide{overflow: hidden;font-size: 0;  background: #000; padding-top: 20px; transform: rotate(180deg);  position: relative; text-align: center;}
+/* Section */
+    .Slide > div{z-index: -1; position: relative; display: none;}
+/* Dot Active */
+    .Slide > div:before{z-index: 1000; vertical-align: bottom; position: relative; content: "."; display: inline-block;margin: 5px; border-radius: 10px; height: 15px; width: 15px; background: rgb(255, 255, 255) }
+/* Buttons */
+    .Slide > a{ height:15px; width: 15px;margin: 5px; border-radius: 10px; background: rgba(255, 255, 255, 0.5); font-size: 0; overflow: hidden; display: inline-block;}
+    .Slide > a:target { display: none; }
+    .Slide > a:target + div{ display: inline;}
+    .Slide > a:target:after{z-index: 1000; height: 60px; width: 30px; background: #000; content: ""; position: absolute; left: 0; top: 50%; display: block;}
+    .Slide > a:before,.Slide > a:first-child:target ~ a:nth-last-child(2):before{
+        height: 80px; line-height: 60px;width: 30px; content:  "";
+        background: rgba(0, 0, 0, 0.3); background-position: center; background-repeat: no-repeat; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 100 100' x='0px' y='0px'><path fill='white' d='M61.59,78.41a2,2,0,0,0,2.83-2.83L36.83,48,64.41,20.41a2,2,0,0,0-2.83-2.83l-29,29a2,2,0,0,0,0,2.83Z'/></svg>"); background-size: 30px auto;
+        color: #fff;  position: absolute; left: 0; margin-top: -40px; top: 50%; display: block;}
+    .Slide > a:target + div + a:after,.Slide > a:nth-child(1):after{ height: 80px; margin-top: -40px; line-height: 60px; width: 30px;
+        
+        
+        
+        font-weight: 900;font-size: 1.3rem; color: #fff; background: rgba(0, 0, 0, 0.3);
+        
+        background: rgba(0, 0, 0, 0.3); background-position: center; background-repeat: no-repeat; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' data-name='Layer 1' viewBox='0 0 100 100' x='0px' y='0px'><path fill='white' d='M32.59,78.41a2,2,0,0,0,2.83,0l29-29a2,2,0,0,0,0-2.83l-29-29a2,2,0,0,0-2.83,2.83L60.17,48,32.59,75.59A2,2,0,0,0,32.59,78.41Z'/></svg>");
+        
+        content:""; position: absolute; right: 0; top: 50%; display: block;}
+    .Slide > a:target ~ a:before{ display: none;}
+    .Slide > a:not(:target) ~ div:last-child{ display: inline;}
+    .Slide > a:not(:target) ~ a:nth-last-child(2){ display: none;}
+    .Slide > a:target ~ a:nth-last-child(2){ display: inline-block;}
+    .Slide > a:not(:target) ~ div:last-child:after{ display: inline;}
+    .Slide > a:target ~ div:last-child{ display: none !important;}
+    .Slide > a:target + div:last-child{ display: inline !important;}
+/* Once Slide */
+    .Slide > a:first-child:nth-last-child(2){ display: none;}
+    .Slide > a:first-child:nth-last-child(2) + div:before{ display: none;}
+/* Content */
+    .Slide > div > div{ font-size: 15px; position: relative; margin-top: -50px; transform:rotate(180deg); overflow: hidden; z-index: -22; padding:15% 10%; box-sizing: border-box; background-size: cover; background-position: center; text-align: left; width: 100%; float: right; display: block;}
+    .Slide h2{margin: 0;max-width: 320px; line-height: 1.1em; margin-bottom: .4em; font-size: 1.6em; padding: 0; font-weight: 100; color: #fff; }
+    .Slide h3{margin: 0; padding: 0; font-weight: 100; color: #fff; }
+    .Slide h3:after{ content: ""; height: 2px; background: rgba(255, 255, 255, 0.527); margin-left: -10px; width: 20px; display: block;}
+    .Slide p{ font-weight: 100;margin: 0; padding: 0; color: rgba(255, 255, 255, 0.644); }
+    .Slide video{z-index: -122; position: absolute; position: absolute; left: 50%;  top: 50%;max-width: 100%; transform: translate(-50%, -50%); }
+    .Slide div > a{ position: absolute; right: 30px; bottom: 30px; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7em; background: #fff; padding: 5px 10px; text-decoration: none; color: #000;}
+    .Slide > div > div {-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: SlideUp;animation-name: SlideUp;}
+    /* Responsive Link */
+        @media only screen and (max-width:500px) {
+            .Slide video{ max-height: 100%; max-width:inherit;}
+            .Slide h2{ font-size: 1.3em;}
+            .Slide > div > div{ padding: 15% 15% 20%;}
+            .Slide div > a{ color: transparent; top: 0; left: 0; bottom: 0; right: 0; padding: 0; background: none;}
+        }
+/* Animation */
+    @-webkit-keyframes SlideUp { 
+        from {opacity: 0; -webkit-transform:rotate(180deg) translate3d(0, 10%, 0); transform: translate3d(0, 10%, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform:rotate(180deg) translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 
+    }
+    @keyframes SlideUp { 
+        from {opacity: 0; -webkit-transform:rotate(180deg) translate3d(0, 10%, 0); transform:rotate(180deg) translate3d(0, 10%, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform:rotate(180deg) translate3d(0, 0, 0); transform: rotate(180deg) translate3d(0, 0, 0); } 
+    }
+/* Backgrounds */
+    .Slide > div:nth-child(6) > div{ background-image: url(./images/1.jpg);}
+    .Slide > div:nth-child(2) > div{ background-image: url(./images/2.jpg);}
+    .Slide > div:nth-child(4) > div{ background-image: url(./images/3.jpg);}

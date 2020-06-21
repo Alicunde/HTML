@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Experiment in Chrome"
+    },
+    {
+        "version": "0.0.1",
+        "status": 1,
+        "name": "Circle",
+        "path": "Circle",
+        "property": {
+            "html": true,
+            "css": true
+        }
+    },
+    {
+        "version": "0.0.1",
+        "status": 1,
+        "name": "Pixelate",
+        "path": "Pixelate",
+        "property": {
+            "html": true,
+            "css": true
+        }
+    }
+]

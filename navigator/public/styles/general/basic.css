@@ -1,0 +1,141 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,p,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, textarea,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+body { padding: 0;margin: 0; font-family: 'Open Sans', sans-serif;}
+input{ font-family: 'Open Sans', sans-serif;}
+.Space{ padding:5%; overflow:hidden}
+.Square{overflow:hidden; height:70px; width:70px;margin:5%;position:relative; float:left}
+.Square:after{ height:2px;top:50%; left:50%; margin-left: -35px;transform:rotate(45deg); margin-top: -1px; background:#ddd; content:""; display:block; position:absolute; width:70px;; }
+.Square:before{ height:2px;top:50%; left:50%; margin-left: -35px;transform:rotate(-45deg); margin-top: -1px; background:#ddd; content:""; display:block; position:absolute; width:70px;; }
+.clearfix::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+@media print {
+    body { background: #fff; padding: 20px;}
+}
+@page { size: auto; margin: 0mm; }
+divx {
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+
+ul,li{ display:block}
+h1, .h1 {margin:0 0 1rem 0; padding:0; font-size:2.5rem; }
+h2, .h2 {margin:0 0 1rem 0; padding:0;   font-size:2rem; }
+h3, .h3 {margin:0 0 1rem 0; padding:0; font-size:1.75rem; }
+h4, .h4 {margin:0 0 1rem 0; padding:0; font-size:1.5rem; }
+h5, .h5 {margin:0 0 1rem 0; padding:0; font-size:1.25rem; }
+h6, .h6 {margin:0 0 1rem 0; padding:0; font-size:1rem; }
+p {}
+
+picture{ display:block; position:relative}
+img{ display:block; width:100%; content:"2"; position:relative}
+picture:after{ content:attr(title); position:absolute;
+    top:1rem; font-size: 0.8em; color:#fff;
+    left:1rem;  width:100%;  display: block;  z-index:1000}
+
+
+    .Row{    display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;}
+
+
+        body {padding: 0px; margin: 0;;
+         overflow-y: scroll;
+        }
+        body  {
+          -webkit-transition: background 200ms ease-in-out;
+          -moz-transition: background 200ms ease-in-out;
+          -o-transition: background 200ms ease-in-out;
+          transition: background 200ms ease-in-out;
+        }
+        body.Edition .App{  display: none;}
+        .Wall{display: none; z-index: 0; overflow: hidden; position: absolute; top:0%; height: 100%; width: 100%; left: 0; right: 0;bottom: 0;;;;;}
+        .Wall svg{fill: rgba(255, 255, 255, 0.1); transform: rotate(50deg);  width: 150%; bottom: 35%; position: absolute; left: -50%; ;}
+        :root {
+          
+          background: #fff;
+          
+        }
+        .App-content{ min-height: 1000px; z-index: 100;  margin:0px 0px 0px; position: relative;}
+        .App-content::after {
+          content: "";
+          clear: both;
+          display: table;
+        }
+        .App-gallery{ padding-right: 50px;box-sizing: border-box; width: 75%; float: left;}
+        .App-constructor{ overflow: hidden; box-sizing: border-box; padding-top: 90px; box-sizing: border-box; background: rgba(53, 53, 53, 0.603); position: absolute;bottom: 0; height: 100%; right: 0; top:3px;; width: 25%; }
+        .App-constructor iframe{ height: 900px; width: 100%; border: none; background: rgba(0, 0, 0, 0.582);}
+        
+        
+        
+        /* Let's get this party started */
+        ::-webkit-scrollbar {
+          width: 15px;background-color: rgba(255,255,255,0.5);
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          border-radius: 10px;
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #333; width: 5px;
+        }
+        ::-webkit-scrollbar-thumb:window-inactive {
+        background: rgba(0, 0, 0, 1); 
+        }

@@ -1,0 +1,56 @@
+.Text{ padding: 10%;}
+.Text *{ outline: none;}
+/* Titles */
+    .Text h1{ font-size:45px; margin: 0; padding: 0; position: relative;}
+    .Text h1:after{height: 4px; width: 40px; position: absolute; display: block;background: rgba(147, 147, 147, 0.4); content: ""; left:-50px;top: 50%; margin-top: -2px;}
+    .Text h2{ font-size:35px; margin: 0; padding: 0;}
+    .Text h3{ font-size:25px; margin: 0; padding: 0;}
+    .Text h4{ color: #aaa; font-weight: 400; font-size:20px; margin: 0; padding: 0;}
+    /* Link in Paragraph */
+        .Text p a{ background: rgb(240, 243, 255); color: rgb(81, 106, 206); border-radius: 3px;  padding: 3px 7px; text-decoration: none;}
+    /* Paragraph */
+        .Text p{ line-height: 32px; font-size:15px; margin: 0; padding: 20px 0px;}
+    /* Blockquote */
+        .Text blockquote{ position: relative; font-size:25px; margin: 20px 0px; display: block; padding: 30px 30px 30px;}
+        .Text blockquote cite{ font-weight: 500; font-style: normal; display: block; font-size:14px; margin-top: 20px; position: relative;}
+        .Text blockquote cite:after{height: 2px; width: 20px; position: absolute; display: block;background: rgb(206, 206, 206); content: ""; left:-30px;top: 100%; }
+        .Text blockquote sub{ display: block; font-size:14px; color: #aaa; font-style: normal;}
+        .Text blockquote:before { display: block; content: ' '; background-image: url('/components/Text/images/quote.svg'); background-size: 58px 58px; height: 58px; width: 58px;opacity: 0.1; position: absolute; left: 0; top: 0; }
+    /* Tag inline */
+        .Text mark{ background: #fff9dd;color: #4e492f; padding: 0.2em 0.5em; border-radius: 3px; }
+        .Text del{ background: #ff000041;color: #ff0000; padding: 0.2em 0.5em; border-radius: 3px; }
+        .Text s{ background: #ffdddd;color: #5e3636; padding: 0.2em 0.5em; border-radius: 3px; }
+        .Text ins{ background: #ddffe4;color: #365e3e; padding: 0.2em 0.5em; border-radius: 3px; }
+        .Text abbr{ background: #ffddfc;color: #663a62; padding: 0.2em 0.5em; border-radius: 3px; }
+        .Text dfn{ background: #eee;color: #000; padding: 0.2em 0.5em; border-radius: 3px; }
+        .Text q{ font-weight: bolder;}
+        .Text small{font-size: 80%;font-weight: 400;}
+        /* Time */
+            .Text time{ position: relative; background: rgb(255, 246, 194);color: rgb(97, 86, 58); padding: 0.2em 0.5em 0.2em 30px; border-radius: 3px;  }
+            .Text time:after{ content: ""; display: block; height: 10px; width: 10px; border:2px solid rgba(0,0,0,0.2); position: absolute; left: 7px;border-radius: 100px; top: 50%; margin-top: -7px;}
+            .Text time:before{ content: ""; display: block; height: 4px; width: 4px; border:1px solid rgba(0,0,0,0.7);border-bottom-style: dashed; border-top: none; border-right: none; position: absolute; left: 13px; top: 50%; margin-top: -4px;}
+    /* Code */
+        .Text code{ background: #333;color: #ffffff; padding: 0.2em 0.5em; border-radius: 3px; }
+    /* HR */
+        .Text hr { position: relative; width: 100%; display: block; height:40px; border:none; position: relative;}
+        .Text hr:after{ text-align: center; transform: rotate(90deg); color: #aaa; content: "§";position: absolute;top:50%; font-size: 30px;  left: 50%; margin-left: -20px; margin-top: -20px; display: block; height: 40px; width: 40px; background: #fff;;}
+        .Text hr:before{ content: "";position: absolute; top: 50%; height: 1px; width: 80%; left: 10%;  display: block;  background: #ddd;;}
+    /* Lists */
+        .Text ul{ margin: 20px 20px; padding: 0px;}
+        .Text ol{ margin: 20px 20px; padding: 0px;}
+        .Text dl{ margin: 20px 20px; padding: 0px;}
+        .Text dt{ font-weight: bolder; font-size: 15px;}
+        .Text dd{margin-left: 20px; font-weight: normal; padding: 10px; font-size: 14px;}
+        .Text dl dl{ margin: 10px 0px;}
+    /* Table */
+        .Text table{ width: 100%;}
+        .Text table caption{ background: #aaa; color: #000; padding: 10px 0px; text-align: center; font-size:11px}
+        .Text table thead th{ text-align: center; font-size: 13px; padding: 5px 0px; border-bottom:2px solid #aaa}
+        .Text table tbody td{ text-align: left; font-size: 13px; padding: 5px; border-bottom:2px solid #aaa}
+    /* Pre */
+        .Text pre{ background: #000;display: block; padding: 30px; color: #fff; border-radius: 5px;}
+        .Text samp{ background: #000; font-family: 'Courier New', Courier, monospace; display: block; padding: 30px; color: #fff; border-radius: 5px;}
+        .Text summary{ cursor: pointer;}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Text { font-family: 'Open Sans', sans-serif; }

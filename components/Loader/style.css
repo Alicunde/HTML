@@ -1,0 +1,33 @@
+
+  
+  .Loader{margin: 30px;
+   position: relative;
+    height:5px; background: #fff;
+    overflow: hidden;
+  }
+  
+
+@keyframes loader-animation {
+0% {
+left: -50%;
+}
+49% {
+left: 100%;
+}
+50% {
+left: 100%;
+}
+100% {
+left: -50%;
+}
+}
+.Loader:after {
+width: 50%;
+position: absolute; display: block; content: "";
+height: 2px;
+background-color: #577aee;
+animation-name: loader-animation;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: ease;
+}

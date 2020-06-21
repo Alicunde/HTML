@@ -1,0 +1,16 @@
+/* General */
+    .Input {display: flex; padding: 20px;}
+/* Input */
+    .Input input{ -webkit-appearance: none; margin: 0; outline: none; resize: vertical;  font-size:0.9em; box-sizing: border-box;  padding:10px 15px; width: 100%; border-radius:0px 5px 5px 0px; border:1px solid #ddd;}
+    .Input input:read-only{color: #aaa;}
+/* Label */
+    .Input input:last-child{ order: 2; border-radius: 5px; }
+    .Input label{ white-space: nowrap; order: -1; border: 1px solid #ddd; border-right: none; border-radius: 5px 0px 0px 5px; text-align: right; display: block;  font-size:0.7em; padding: 13px 15px;  padding-right: 1.5em;  background: rgb(247, 247, 247);}
+/* Focus */
+    .Input input:focus{ border-top-color: #000;border-right-color: #000;border-bottom-color: #000;}
+    .Input input:last-child:focus{ border-left-color: #000;}
+    .Input input:focus + label{ border-color: #000;}
+/* Read Only */
+    .Input input:read-only{color: #888; background-size: 12px auto; background-position:right 20px top 15px; background-image: url(./lock.svg); background-repeat: no-repeat;}
+/* Zoom iOS */
+    @supports (-webkit-touch-callout: none) { .Input input{ font-size: 16px; } }

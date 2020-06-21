@@ -1,0 +1,16 @@
+/* General */
+    .Blur div{ cursor: pointer; font-family: sans-serif; text-align: center; border:1px solid rgba(0,0,0,0.2); line-height: 1; box-shadow: 0px 3px 3px rgba(0,0,0,0.2); font-size: 0; box-sizing: border-box; padding: 20px 40px; width: 50%; margin: 0 auto;}
+    .Blur div:nth-child(1){-webkit-backdrop-filter:  blur(5px); border-radius: 10px 10px 0px 0px; backdrop-filter:blur(2px);  }
+    .Blur div:nth-child(2){-webkit-backdrop-filter:  blur(5px);border-top: 0; border-bottom: 0; backdrop-filter: blur(4px);  }
+    .Blur div:nth-child(3){-webkit-backdrop-filter: blur(5px);border-top: 0; border-bottom: 0; backdrop-filter: blur(8px);  }
+    .Blur div:nth-child(4){-webkit-backdrop-filter:  blur(5px);border-top: 0; border-bottom: 0; backdrop-filter:  blur(16px);  }
+    .Blur div:nth-child(5){-webkit-backdrop-filter:blur(5px); border-top: 0; border-bottom: 0;backdrop-filter: blur(42px);  }
+    .Blur div:nth-child(6){-webkit-backdrop-filter: blur(5px);border-radius: 0px 0px 10px 10px; backdrop-filter:  blur(100px);  }
+    .Blur div:hover{-webkit-backdrop-filter:  blur(0px) grayscale(100%); backdrop-filter:blur(0px)  grayscale(100%); }
+/* Hover */
+    .Blur:hover{ filter:grayscale(100%)}
+    .Blur:hover div:hover{ background: rgba(255,255,255,0.1);}
+/* Animation */
+    .Blur { -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out; -o-transition: all 200ms ease-in-out; transition: all 200ms ease-in-out;}
+/* Component */
+    .Blur{ padding:6%; background:url(https://images.unsplash.com/photo-1590746490933-7ac6676d9a9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1234&q=80); background-size: cover; background-position: center;}

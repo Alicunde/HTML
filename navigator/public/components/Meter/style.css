@@ -1,0 +1,61 @@
+
+.Meter { padding: 5%;}
+
+
+.Meter p {
+  margin: 0; padding: 0; line-height: 2; margin-bottom: .8em; font-size: 1em;
+}
+
+.Meter p span {
+  
+  float: right; color: #aaa;
+}
+.Meter ul{ position: relative; display: block; margin: 0; padding: 0 0 8em 0; font-size: 3vw;}
+.Meter ul:after{ border-radius: 5px; height: 2em; content: ""; display: block; width: 100%; position: absolute; left: 0; right: 0; top: 0; z-index: -1; background: rgb(211, 211, 211);}
+
+.Meter ul li {margin: 0; padding: 0; width: 100%; display: block;}
+.Meter ul li:first-child u{ border-radius: 5px 0px 0px 5px;}
+.Meter ul li:last-child u{ border-radius:  0px 5px 5px 0px;}
+.Meter ul li u{float: left;margin: 0; padding: 0; height: 2em; background: red; display: block;}
+.Meter ul li:nth-child(1) u{background:#0ba5c9 ; }
+.Meter ul li:nth-child(2) u{background: #194467; }
+.Meter ul li:nth-child(3) u{background: #ea666d; }
+.Meter ul li:nth-child(4) u{background: #f6c14f; }
+
+.Meter ul li:nth-child(1) span{left: 0%; }
+.Meter ul li:nth-child(2) span{left: 25%; }
+.Meter ul li:nth-child(3) span{left: 50%; }
+.Meter ul li:nth-child(4) span{left: 75%; }
+
+.Meter ul li:nth-child(1) b{left: 0%; }
+.Meter ul li:nth-child(2) b{left: 25%; }
+.Meter ul li:nth-child(3) b{left: 50%; }
+.Meter ul li:nth-child(4) b{left: 75%; }
+
+.Meter ul b{ font-size: 0.7em;margin-left: 1.4rem; color: #aaa; font-weight: 200;top: 7.5em; position: absolute;}
+.Meter ul span{text-shadow:0px 0px 5px rgb(255, 255, 255); color: #000;margin-left: 1rem; font-weight: bold;top: 4em; position: absolute;}
+.Meter ul span:after{ height: 0.9em; width: 1px; content: ""; display: block; background: #aaa; position: absolute; left: -0.4em; top: 0.8em;}
+.Meter ul span:before{ height:1px; width: 0.4em; content: ""; display: block; background: #aaa; position: absolute; left: -0.4em; top: 1.7em;}
+
+
+.Meter ul::before {
+    content: '';
+    height: 0.8em;position: absolute; top: 4em;
+    outline: 0px solid #000;
+    display: block; left: 0; right: 0;;
+    background-image: linear-gradient( 90deg, 
+                                       #0ba5c9 25%, 
+                                       #194467 25%,
+                                       #194467 50%,
+                                       #ea666d 50%,
+                                       #ea666d 75%,
+                                       #f6c14f 75%,
+                                       #f6c14f 100%);
+  
+  }
+  
+
+  @media (max-width: 500px) {
+    
+    .Meter p span{ display: block; float: none;font-size: 0.8em; margin-top: -0.5em;}
+  }

@@ -1,0 +1,25 @@
+/* General */
+    .Submit { overflow: hidden; text-transform: uppercase; font-size: 0.8em; letter-spacing: 2px; padding:20px;}
+/* Submit */
+    .Submit button[type='submit'] { text-transform: uppercase; letter-spacing: 2px; cursor: pointer; position: relative; background: rgb(139, 139, 255); color: #fff; outline: none; resize: vertical; font-size:1em; box-sizing: border-box; float: right; padding:10px 50px 10px 25px; border-radius: 5px; border: none; }
+    .Submit button[type='submit']:after{ content: ''; display: block; height: 1px; width: 15px; background: #fff; position: absolute; right: 17px; top: 50%;;}
+    .Submit button[type='submit']:before{ content: ''; display: block; height: 8px; width: 8px; border-right: 1px solid #fff;margin-top: -4px; border-top: 1px solid #fff; transform: rotate(45deg); position: absolute; right: 18px; top: 50%; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); }
+/* Delete */
+    .Submit a { position: relative; font-weight: 400; padding-left: 30px; margin-right: 10px;color: rgb(157, 53, 53); text-decoration: none; outline: none; resize: vertical; font-size:1em; box-sizing: border-box; float: left; padding:5px 10px 5px 35px;margin: 5px 10px 5px 10px; border-radius: 5px; border:1px solid #eee; }
+    .Submit a:after{ content: ''; display: block; height: 1px; width: 15px; transform:rotate(45deg) ; background: rgb(157, 53, 53); position: absolute; left: 11px; top: 50%; -webkit-transform:rotate(45deg) ; -moz-transform:rotate(45deg) ; -ms-transform:rotate(45deg) ; -o-transform:rotate(45deg) ; }
+    .Submit a:before{ content: ''; display: block; height: 1px; width: 15px; transform:rotate(-45deg) ; background: rgb(157, 53, 53); position: absolute; left: 11px; top: 50%; -webkit-transform:rotate(-45deg) ; -moz-transform:rotate(-45deg) ; -ms-transform:rotate(-45deg) ; -o-transform:rotate(-45deg) ; }
+/* Reset */
+    .Submit button[type='reset'] { color: #aaa; text-transform: uppercase; letter-spacing: 2px; position: relative; margin-right: 10px; outline: none; resize: vertical; font-size:1em; box-sizing: border-box; float: left; padding:5px 10px 5px 35px; border-radius: 5px; border:1px solid #eee; background-color: rgb(255, 255, 255); margin: 5px 10px 5px 10px;}
+    .Submit button[type='reset']:after{ border-radius: 100px; content: ''; display: block; height: 12px; width: 12px;margin-top: -6px; transform:rotate(45deg) ; border: 1px solid #aaa; border-bottom-color: transparent; position: absolute; left: 11px; top: 50%; -webkit-transform:rotate(45deg) ; -moz-transform:rotate(45deg) ; -ms-transform:rotate(45deg) ; -o-transform:rotate(45deg) ; -webkit-border-radius: 100px; -moz-border-radius: 100px; -ms-border-radius: 100px; -o-border-radius: 100px; }
+    .Submit button[type='reset']:before{ content: ''; display: block; height: 5px; width: 5px; transform:rotate(-120deg) ; border-top: 1px solid #aaa; border-left:1px solid #aaa; position: absolute; left: 9px; margin-top: -5px; top: 50%; -webkit-transform:rotate(-120deg) ; -moz-transform:rotate(-120deg) ; -ms-transform:rotate(-120deg) ; -o-transform:rotate(-120deg) ; }
+/* Responsive */
+    @media only screen and (max-width:440px) {
+        .Submit button[type='reset']{ display: none;}
+    }
+    @media only screen and (max-width:300px) {
+        .Submit{ padding-left: 0;}
+        .Submit a{ border: none;}
+    }
+    @media only screen and (max-width:260px) {
+        .Submit a{ display: none; }
+    }

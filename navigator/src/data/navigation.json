@@ -1,0 +1,190 @@
+[
+    {
+        "title": "Navigation"
+    },
+    {
+        "version": "1.3.7",
+        "status": 1,
+        "name": "Button",
+        "path": "Button",
+        "property": {
+            "html": true,
+            "print": false,
+            "icon": true,
+            "css": true,
+            "responsive": false
+        },
+        "information": "Botones de todos los tipos y colores, basados en transparencias e iconos incrustados por pseudo elementos."
+    },
+    {
+        "version": "4.8.2",
+
+        "status":1,
+        "name": "Target",
+        "path": "Target",
+        "property": {
+            "html": true,
+            "print": false,
+            "icon": true,
+            "css": true
+        },
+        "option": {
+            "description": true
+        }
+    },
+    {
+        "version": "4.0.3",
+        "status": 1,
+        "name": "Tabs",
+        "path": "Tabs",
+        "property": {
+            "placeholder":true,
+            "html": true,
+            "icon": true,
+            "responsive": true,
+            "css": true
+        },
+        "option": {
+            "icons": true,
+            "descriptions": true
+        },
+        "information": "Un conjunto de tabs basadas en CSS"
+    },
+    {
+        "status": 1,
+        "version": "4.2.3",
+        "name": "Accordion",
+        "path": "Accordion",
+        "property": {
+            "html": true,
+            "img": true,
+            "css": true,
+            "print": true,
+            "placeholder": true,
+            "responsive": true,
+            "icon": false
+        },
+        "option": {
+            "links": true,
+            "descriptions": true
+        },
+        "information": "Sencillo acordeón con apertura basada en selectores de CSS y sin uso de JavaScript. Los iconos son pseudoelementos sin uso de fuentes. Componente responsive con ajuste horizontal y control de objetos secundarios."
+    },
+    {
+        "status": 10,
+        "name": "Modal",
+        "path": "Modal",
+        "property": {
+            "html": true,
+            "icon": true,
+            "js": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "icons": true,
+            "close": true,
+            "description": true,
+            "name": true
+        },
+        "information": "Modal básico"
+    },
+    {
+        "importance":2,
+        "special": true,
+        "status": 1,
+        "version": "4.0.2",
+        "name": "Slide",
+        "path": "Slide",
+        "property": {
+            "icon": true,
+            "img": true,
+            "css": true,
+            "responsive": true,
+            "print": true
+        },
+        "rules": {},
+        "option": {
+            "video": true,
+
+            "titles": true,
+            "subtitles": true,
+            "descriptions": true,
+            "links": true
+        }
+    },
+    {
+        "status": 1,
+        "version": "4.0.3",
+        "name": "Carrousel",
+        "path": "Carrousel",
+        "property": {
+            "icon": true,
+            "img": true,
+            "css": true,
+            "responsive": true,
+            "print": true
+        },
+        "rules": {}
+    },
+    {
+        "version": "4.1.9",
+
+        "status": 1,
+        "name": "Pagination",
+        "path": "Pagination",
+        "property": {
+            "html": true,
+            "icon": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "icons": true,
+            "dots": true,
+            "counter": true,
+            "controls": true
+        },
+        "information": "Paginación ultra completa y responsive"
+    },
+    {
+        "version": "4.1.1",
+
+        "status": 1,
+        "name": "Menu",
+        "path": "Menu",
+        "property": {
+            "icon": true,
+            "placeholder": true,
+            "css": true,
+            "js": true,
+            "responsive": true,
+            "print": true
+        },
+        "rules": {},
+        "option": {
+            "logotype": true,
+            "icons": true,
+            "vertical": false
+        },
+        "information": "Simplemente un menu, sin apenas objectos y con capacidad de mostrarse horizontal, vertical y, porsupuesto, responsive."
+    },
+    {
+        "version": "4.2.3",
+
+        "status": 1,
+        "name": "Breadcrumb",
+        "path": "Breadcrumb",
+        "property": {
+            "responsive": true,
+            "css": true
+        },
+        "option": {
+            "icons": true,
+            "detail": true,
+            "logotype": true
+        },
+        "information": "Breadcrumbs responsive."
+    }
+]

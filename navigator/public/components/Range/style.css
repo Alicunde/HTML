@@ -1,0 +1,46 @@
+.Range{ margin: 20px; z-index: 1; position: relative; }
+/* Input */
+    .Range input{ width: 100%; display: block; }
+    .Range input[type=range]{height: 6px; outline: none; cursor: pointer; appearance: none; -webkit-appearance: none;}
+/* Lines */
+    .Range:before{
+        /* Layout */
+            content: "";z-index: -1;margin-top: -7px; border-right: 2px solid rgb(232, 232, 232); height: 20px; margin-left: 12px;margin-right: 12px; display: block;
+        /* Position */
+            position: absolute; left: 0; top: 0; right: 0;
+        /* Background */
+            background-image: linear-gradient(90deg, rgb(232, 232, 232) 2px, transparent -1px);
+            background-size: 10% 10%;
+    }
+/* Focus */
+    .Range input[type=range]:focus { outline: none;}
+/* Webkit */
+    .Range input[type=range]::-webkit-slider-thumb { box-shadow: 0px 1px 3px #00000077, 0px 0px 1px #0d0d0d71; height: 24px; box-sizing: border-box; width: 24px;border:5px solid #fff; border-radius: 24px;background: #eee; cursor: pointer; -webkit-appearance: none; margin-top: -11px;}
+    .Range input[type=range]::-webkit-slider-runnable-track{ width: 100%; height: 2px; border-top: 1px solid #fff; border-bottom:1px solid #fff; height: 6px;background: #ccc;}
+    /* Focus */
+        .Range input[type=range]:focus::-webkit-slider-thumb { box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.1); }
+        .Range input[type=range]:focus::-webkit-slider-runnable-track { background: rgb(139, 139, 255); border-top: 1px solid #fff; border-bottom:1px solid #fff;}
+    /* Hover */
+        .Range  input[type=range]:hover::-webkit-slider-runnable-track{ background: rgb(139, 139, 255); border-top: 1px solid #fff; border-bottom:1px solid #fff;}
+    /* Animation */
+        .Range  input[type=range]::-webkit-slider-thumb { transition: all 200ms ease-in-out; -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out; -o-transition: all 200ms ease-in-out; -ms-transition: all 200ms ease-in-out; }
+        .Range  input[type=range]::-webkit-slider-runnable-track { transition: all 200ms ease-in-out; -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out; -o-transition: all 200ms ease-in-out; -ms-transition: all 200ms ease-in-out; }
+/* Moz */
+    .Range input[type=range]::-moz-range-thumb{ box-shadow: 0px 1px 3px #00000077, 0px 0px 1px #0d0d0d71; height: 24px; box-sizing: border-box; width: 24px;border:5px solid #fff; border-radius: 24px;background: #eee; cursor: pointer; -webkit-appearance: none; margin-top: -11px;}
+    .Range input[type=range]::-moz-range-track{ width: 100%;   height:4px;background: #ccc; border-top: 1px solid #fff; border-bottom:1px solid #fff;}
+    /* Focus */
+        .Range input[type=range]::-moz-focus-outer { border: 0;}
+        .Range input[type=range]:focus::-moz-range-thumb { box-shadow: 0px 0px 0px 5px rgba(0,0,0,0.1); }
+        .Range input[type=range]:focus::-moz-range-track { background: rgb(139, 139, 255); border-top: 1px solid #fff; border-bottom:1px solid #fff;}
+    /* Hover */
+        .Range  input[type=range]:hover::-moz-range-track { background: rgb(139, 139, 255); border-top: 1px solid #fff; border-bottom:1px solid #fff;}
+    /* Animation */
+        .Range  input[type=range]::-moz-range-track { transition: all 200ms ease-in-out; -webkit-transition: all 200ms ease-in-out; -moz-transition: all 200ms ease-in-out; -o-transition: all 200ms ease-in-out; -ms-transition: all 200ms ease-in-out; }
+/* Ms */
+    .Range input[type=range]::-ms-thumb { box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; border: 1px solid #000000; height: 36px; width: 16px;  border-radius: 3px; background: #ffffff; cursor: pointer; }
+    .Range input[type=range]::-ms-track { width: 100%; height: 8.4px; cursor: pointer; background: transparent; border-color: transparent;  border-width: 16px 0; color: transparent;}
+    .Range input[type=range]::-ms-fill-lower { background: #2a6495; border: 0.2px solid #010101; border-radius: 2.6px; box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;}
+    .Range input[type=range]::-ms-fill-upper { background: #3071a9; border: 0.2px solid #010101; border-radius: 2.6px; box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;}
+    /* Focus */
+        .Range input[type=range]:focus::-ms-fill-lower {background: #3071a9;}
+        .Range input[type=range]:focus::-ms-fill-upper { background: #367ebd;}

@@ -1,0 +1,322 @@
+[
+    {
+        "id":"technology",
+        "title":"Diseño y tecnología",
+        "description":"",
+        "text":""
+    },
+    {
+        "id":"innovation",
+
+        "title":"Innovacion",
+        "description":"Un framework limita la innovacion",
+        "text":"El diseño generalmente está reñido con la tecnología."
+    },
+    {
+        "id":"amazin",
+
+        "title":"No te sorprendas",
+        "description":"Si te sorprendes es que algo falla",
+        "text":"Muchos solemos recorrer Internet buscando sorprendernos con interfaces basados en HTML considerando que son interfaces increíbles. Generalmente lo hacemos por el desconocimiento que los estándares de diseño basados en frameworks nos han impuesto."
+    },
+    {
+        "id":"independent",
+        "title":"Los componentes deben ser mayormente independientes",
+        "description":"No siempre, pero si en su diseño estructural",
+        "text":""
+    },
+    {
+        "id":"everybody",
+        "title":"Este proyecto igual no te sirve",
+        "description":"No está orientado a todo el mundo",
+        "text":""
+    },
+    {
+        "id":"design",
+        "title":"Diseño",
+        "description":"",
+        "text":""
+    },
+    {
+        "title":"Número de Clases",
+        "description":"Hacer uso del mínimo número de clases",
+        "text":"La mayoría de frameworks del mercado hacen uso de múltiples clases para definir el diseño. Nuestra visión es contraría y consideramos que el uso de múltiples clases genera un código sucio, ilegible y fomenta el desconocimiento del poder del lenguaje."
+    },
+    {
+        "title":"Diferencia entre componente y estilo",
+        "description":"El componente requiere de nuevos objetos DOM",
+        "text":"Existen componentes en HTML que requieren de objetos para suplir la funcionalidad del interface. Por otro lado existen objetos que definen únicamente el diseño del interface. La mayor parte de los programadores de HTML no distinguien esta realidad, considerando que un framework debe abarcar todas tipologías de objetos, cuando no son capaces de distinguir lo que es un objeto de diseño y lo que es un objeto de interface. Los creadores del HTML para ello crearon los objetos nativos disponibles y las clases adjuntas a los mismos. Hagamos un uso adecuado de las mismas."
+    },
+    {
+    "title":"Motivación filosófica",
+    "description":"Compartir conocimiento, aunque sea un ignorante",
+    "text":"Actualmente existen miles de librerías, frameworks y toda una ingente cantidad de componentes de gran calidad. Tanto es así, que son mayoría los programadores que no han desarrollado un simple slide.\n La importancia de comprender la profundidad del HTML me ha incitado a crear este pequeño repositorio desarrollado durante 4 días y mucho café."
+},
+{
+    "title":"No mates al mensajero",
+    "description":"Me considero un programador mediocre",
+    "text":"No te dejes engañar, el HTML es, sin lugar a dudas, un lenguaje poco comprendido, menospreciado y con una gran variedad de formas de programar. El HTML "
+},
+{
+    "title":"Una clase para dominar el mundo",
+    "description":"Componentes con una única clase",
+    "text":"Te voy a ser sincero, soy quien clica con el botón secundarío en Gmail para ver su HTML. No soporto ver códigos fuente con miles de clases diferentes. Softwares con pocas pantallas repletos de componentes de miles de autores, 10 fuentes diferentes, cargadores por doquier y con diseño más parecido a un Frankestein que a otra cosa.\n Creo entender que la mayoría de los grandes softwares cuentan con largas historias y que la actualidad de su código se ha visto implicado en una guerra dificil de ganar. En cambio, me tropiezo todas las semanas con clientes con sistemas absurdamente vulgares sin si quiera tener una versión en producción. En este punto me voy a centrar en la nomenclatura de este repositorio.\n Detesto en lo más profundo de mi corazón encontrarme componentes con clases con prefijos, sufijos o lo que es peor, clases nombradas sin ningún sentido o directamente letras al azar.\n Todos los componentes de este repositorio hacen uso de una única clase por componente. Jerarquizando todo su contenido mediante los selectores de CSS y no interfiriendo tanto en componentes de un mismo nivel, como a los elementos incrustados en los diferentes containers disponibles. No solo se pretende crear un código más bello, si no, permitir al programador hacer suyos los mismos. Facilitando la modificación del mismo y no renunciando a nuestra capacidad creativa.\n Sí, no soy el único que lo piensa, el futuro de la web cada día es más parecido, botones con los mismos colores y, lo que más me duele, paddings mal diseñados."
+},
+{
+    "id":"icon",
+    "title":"Iconos con clase o sin clase",
+    "description":"Depende si son contenido o interface",
+    "text":""
+},
+{
+    "title":"Divisores",
+    "id":"division",
+    "description":"Mostrar divisores superiores con limitación del primer resultado",
+    "text":"Esto es el tema de los listados con bordes bottoms, que si lo ponemos bottom queda feo"
+},
+{
+    "title":"Libertad",
+    "id":"Este repositorio no va en contra de React, Vue y derivados",
+    "description":"Mostrar divisores superiores con limitación del primer resultado",
+    "text":"Esto es el tema de los listados con bordes bottoms, que si lo ponemos bottom queda feo"
+},
+{
+    "title":"Animaciones",
+    "id":"Dejemos de usar Javascript",
+    "description":"",
+    "text":""
+},
+{
+    "title":"Medidas Dinámicas",
+    "id":"No definas ninguna altura en toda la web, la web es vertical",
+    "description":"",
+    "text":""
+},
+{
+    "title":"Hover",
+    "id":"hover",
+    "description":"Define un hover en todo componente clicable",
+    "text":""
+},
+{
+    "title":"Hover Animation",
+    "id":"hover_animation",
+    "description":"Un hover animado debe estar complementado con un hover inmediato",
+    "text":""
+},
+{
+    "id":"opacity",
+    "title":"Opacity",
+    "description":"Utiliza elementos con opacidad sobre fondos",
+    "text":""
+},
+{
+    "id":"opacityColor",
+    "title":"Mejor usar opacidades que colores en cosas apagadas",
+    "description":"Colores superiores a opacidades",
+    "text":""
+},
+{
+    "id":"print",
+    "title":"Capacidad para imprimir",
+    "description":"Utiliza elementos con opacidad sobre fondos",
+    "text":""
+},
+{
+    "id":"break",
+    "title":"Saltos de línea por medidas",
+    "description":"Los saltos de línea para titulos y textos representativos deben hacerse mediante medidas dinámicas, teniendo en cuenta la representación para la impresión.",
+    "text":""
+},
+{
+    "id":"areaEvents",
+    "title":"Areas de eventos más grandes de lo definidas graficamente",
+    "description":"Un botón sin fondo debe contemplar los clicks cercanos",
+    "text":""
+},
+
+{
+    "id":"eventsConsciencie",
+    "title":"Esto es por el menu en movil, donde si clicas en toda la barra, se debe abrir el menu",
+    "description":"",
+    "text":""
+},
+{
+    "id":"blocknowrap",
+    "title":"Esto es cuando la pantalla es menor a 200 y los interfaces deben destruirse lo menor posible",
+    "description":"",
+    "text":""
+},
+{
+    "id":"mouse-active",
+    "title":"A un elemento de interface debes añadirle un active css",
+    "description":"Utiliza elementos con opacidad sobre fondos",
+    "text":""
+},
+{
+    "id":"responsive-controls",
+    "title":"Los controles no deben ser exactos en REsponsive",
+    "description":"Por ejemplo un slide tiene muchos componentes que en un movil no son necesarios.",
+    "text":""
+},
+{
+    "id":"print-code",
+    "title":"Interface oculto para impresión",
+    "description":"Encapsular los elementos puramente del interface dentro de code nos permite ocultarlo rapidamente en el modo impresion",
+    "text":""
+},
+{
+    "id":"marginObjects",
+    "title":"Margen entre objectos",
+    "description":"El margen de un objecto debe ser siempre dinámico, no en cambio su padding.",
+    "text":""
+},
+{
+    "id":"cssVarAlternative",
+    "title":"Añadimos un valor secundario en caso de no encontrar el contenido de un --var",
+    "description":"",
+    "text":""
+},
+{
+    "id":"importantOrder",
+    "title":"El orden de las cosas al reducir la pantalla",
+    "description":"Por ejemplo un submit debe estar encima de un delete.",
+    "text":""
+},
+{
+    "id":"textareaResize",
+    "title":"No permitir el resize horizontal del textarea",
+    "description":"El margen de un objecto debe ser siempre dinámico, no en cambio su padding.",
+    "text":""
+},
+{
+    "id":"order",
+    "title":"El orden es importante",
+    "description":"El orden del contenido muchas veces define el tipo de contenido",
+    "text":""
+},
+{
+    "id":"Etiqueta Code",
+    "title":"Seamos realistas, una etiqueta que apenas se usa",
+    "description":"Nosotros hacemos uso de code para definir controles",
+    "text":""
+},
+{
+    "id":"render",
+    "title":"Render inicial sin Javascript",
+    "description":"Nosotros hacemos uso de code para definir controles",
+    "text":""
+},
+{
+    "id":"appear",
+    "title":"Animacion sobre el objeto entrante",
+    "description":"Procuramos animar el objeto entrante",
+    "text":""
+},
+{
+    "id":"infinite",
+    "title":"No repitas componentes, ordenalos",
+    "description":"Procuramos animar el objeto entrante",
+    "text":""
+},
+{
+    "id":"video",
+    "title":"Formato mp4",
+    "description":"Procuramos animar el objeto entrante",
+    "text":""
+},
+{
+    "id":"semantic",
+    "title":"Semántica del Código",
+    "description":"Procuramos animar el objeto entrante",
+    "text":""
+},
+{
+    "id":"direction",
+    "title":"Verticalidad & horizontalidad",
+    "description":"Procuramos animar el objeto entrante",
+    "text":""
+},
+{
+    "id":"ex",
+    "title":"Verticalidad & horizontalidad",
+    "description":"Procuramos animar el objeto entrante",
+    "text":""
+},
+{
+    "id":"cursor",
+    "title":"Cursores",
+    "description":"Procuramos animar el objeto entrante",
+    "text":""
+},
+{
+    "id":"important",
+    "title":"Important",
+    "description":"Generalmente si usas important es que no tienes control real de lo que haces.",
+    "text":""
+},
+{
+    "id":"hover_hover",
+    "title":"Respect Hover move",
+    "description":"cuando te pones encima de algo y se mueve.",
+    "text":""
+},
+{
+    "id":"hover_hover",
+    "title":"Respect Hover move",
+    "description":"cuando te pones encima de algo y se mueve.",
+    "text":""
+},
+{
+    "id":"datadesign",
+    "title":"Diseño incrustado por tipo de dato",
+    "description":"Existen datos que requieren estilos específicos. Una columna es un dato que requiere de una anchura, debe definirse en su cuerpo.",
+    "text":""
+},
+{
+    "id":"hierarchy",
+    "title":"El componente es capaz de replicarse dentro de si mismo",
+    "text":""
+},
+{
+    "id":"disinherited",
+    "title":"No hereda css",
+    "text":""
+},
+{
+    "id":"pseudo",
+    "title":"After and before",
+    "description":"Los objetos gráficos que no requieran de eventos del usuario deben siempre renderizarse con esto.",
+    "text":""
+},
+{
+    "id":"marginpadding",
+    "title":"Teory Padding",
+    "description":"Los paddings no pueden ser cuadrados.",
+    "text":""
+},
+{
+    "id":"img",
+    "title":"Imagenes rapidas",
+    "description":"Las imagenes no deben hacer uso de eventos onload",
+    "text":""
+},
+{
+    "id":"toggle",
+    "title":"Despliegue animado, cerramiento sin animacion",
+    "description":"Las imagenes no deben hacer uso de eventos onload",
+    "text":""
+},
+{
+    "id":"cssbreak",
+    "title":"Odio los saltos de línea en CSS",
+    "description":"Las imagenes no deben hacer uso de eventos onload",
+    "text":""
+},
+{
+    "id":"csslong",
+    "title":"No crees clases de CSS con muchas específicaciones",
+    "description":"Las imagenes no deben hacer uso de eventos onload",
+    "text":""
+}
+]

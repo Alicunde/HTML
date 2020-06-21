@@ -1,0 +1,18 @@
+/* General */
+    .Prices { padding: 0px 0px; background: #fff;}
+    .Prices:after{ height: 13em; background:rgb(230, 230, 230);  content: ""; display: block; width: 100%; position: absolute; top: 0; z-index: 1;; }
+/* List */
+    .Prices ul{position: relative; z-index: 2;; margin: 0; padding: 0; display: flex; justify-content:center; flex-wrap: wrap; }
+    .Prices > ul > li{ padding: 2em; margin:4% 2%; background: #fff; display: block;overflow: hidden; position: relative; width: 220px; border-radius: 7px; box-shadow: 0px 3px 10px rgba(0,0,0,0.1); }
+/* Title */
+    .Prices > ul > li > h3{ padding: 0; font-size: 1.4em; font-weight: 600; margin: 0; color: rgb(139, 139, 255);}
+/* Description */
+    .Prices > ul > li > p{ padding: 0; font-size: 0.9em; margin: 0; color: rgb(162, 162, 162);}
+/* Price */
+    .Prices > ul > li > em{ color: #555; margin-bottom: 0.7em; display: block; font-size: 1.5em; font-weight: bold; font-style: normal;}
+    .Prices > ul > li > em > span{ color: #aaa; font-weight: 100;}
+/* Details */
+    .Prices > ul > li > ul{ border-top: 1px solid #ddd; padding-top: 1em; position: relative; display: block; margin-top: 2em;}
+    .Prices > ul > li > ul:after{ height: 5px; width: 30px; border-radius: 2px; top: -3px; background: rgb(139, 139, 255); content: ""; display: block; position: absolute; left: 50%; margin-left: -15px;}
+    .Prices > ul > li > ul > li{ display: block; padding: 0.4em 0; font-size: 0.8em;}
+    .Prices > ul > li > a{ color: #fff; background: rgb(139, 139, 255); padding:0.5em 1.4em; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8em; border-radius: 10px; text-decoration: none;}

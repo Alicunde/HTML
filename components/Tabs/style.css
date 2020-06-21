@@ -1,0 +1,38 @@
+/* General */
+    .Tabs { padding: 5%; font-size:14px; flex-wrap: wrap; display: flex; margin: 0; }
+/* Tab */
+    .Tabs > label{ float: left; order: -1; cursor: pointer; position: relative; display: inline-block; padding: 10px 20px;; background: rgba(0, 0, 0, 0.767); color: #fff;;}
+    .Tabs > input{ display: none;;}
+    .Tabs > div{ display: none;;}
+    /* Label */
+        .Tabs > label > i{text-align: center; position: absolute; font-size: 18px; left:20px; top: 50%; height: 20px; width: 20px; line-height: 20px; margin-top: -10px;}
+        .Tabs > label > p{ white-space: nowrap; display: block; margin: 0; padding: 0; font-size: 12px; opacity: 0.6;; }
+        .Tabs > label > b{ display: block; }
+        .Tabs > label > b:nth-child(2){ margin-left: 40px;}
+        .Tabs > label > p:nth-child(3){ margin-left: 40px;}
+        .Tabs > div::after { content: ""; clear: both; display: table;}
+/* Checked */
+    .Tabs > input:checked + label{ background-color: #111; color: #fff;}
+    .Tabs > input:checked + label + div {background: #111; display: block; width: 100%;  min-width: 100%; -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: Tab; animation-name: Tab;}
+/* Animation */
+    @-webkit-keyframes Tab { 
+        from { padding-top: 0px;padding-bottom: 10px;  } 
+        to {padding-top: 10px;padding-bottom: 0px;   } 
+    }
+    @keyframes Tab { 
+        from { padding-top: 0px;padding-bottom: 10px;   } 
+        to {padding-top: 10px;padding-bottom: 0px;   } 
+    }
+/* Responsive */
+    @media only screen and (max-width:550px) {
+        .Tabs  > label{ font-weight: normal;}
+        .Tabs  > label p{ display: none;}
+    }
+    @media only screen and (max-width:290px) {
+        .Tabs .Placeholder:before{ content: "CONTENT";}
+        .Tabs  > label > i{ display: none;}
+        .Tabs  > label > b:nth-child(2){ margin-left: 0px;}
+    }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Tabs { font-family: 'Open Sans', sans-serif; }

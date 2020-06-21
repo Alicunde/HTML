@@ -1,0 +1,31 @@
+/* General */
+    .Table {padding: 20px;}
+    .Table *{ white-space: nowrap;}
+    .Table table{ border-collapse: collapse; border: none; border-radius: 6px; width: 100%;}
+    .Table th,.Table td {  border: 1px solid #ccc; border-left-style: dashed; border-right-style: dashed; }
+/* Head */
+    .Table thead th:first-child{ border-radius: 6px 0px 0px 0px;}
+    .Table thead th:last-child{ border-radius:  0px 6px 0px 0px;}
+    .Table thead th{ border:none; background: #444; font-weight: normal; color: #fff; text-transform: uppercase; letter-spacing: 2px; font-size:12px; padding:10px 8px ; text-align: center; }
+/* Body */
+    .Table tbody td{  padding: 0px; font-size:13px; text-align: left; }
+    .Table td:first-child{ border-left: none;}
+    .Table td:last-child{ border-right: none;}
+    .Table tbody td:last-child{ width: auto;}
+    .Table table td strong{ padding:5px 8px; display: block; font-weight: normal; background: rgb(255, 252, 230);}
+    .Table table td strong::first-letter{ font-weight: 100;}
+    .Table table td a{ padding:5px 8px;display: block; color: rgb(79, 100, 167); background: rgb(241, 245, 255);}
+    .Table table td del {  display: block;}
+    .Table table td del a{ padding:5px 8px;display: block; color: rgb(164, 70, 70);; background: rgb(255, 241, 241);}
+    .Table table td span{ display: block;padding:5px 8px; }
+    .Table table td em{ text-align: right; display: block; padding:5px 8px; font-style: normal; background: rgb(229, 255, 238); color: rgb(66, 136, 91);}
+/* foot */
+    .Table table tfoot th:first-child span{ display: block; font-weight: normal; padding: 5px 8px; font-size: 12px; text-align: right;}
+    .Table table tfoot th {border-bottom:none; background: #fff;}
+    .Table table tfoot th em{ padding: 14px 18px; display: block; font-style: normal; font-size:20px; text-align: right;}
+    .Table tfoot th:first-child{ border-left: none;}
+    .Table tfoot th:last-child{ border-right: none;}
+/* Background */
+    .Table table tr:nth-child(odd){background-color: rgb(245, 245, 245);}
+/* Hover */
+    .Table table tr:hover td *{ color:rgb(53, 147, 111) !important; background: rgb(223, 255, 243);;}

@@ -1,0 +1,21 @@
+/* Tip */
+    *[data-tip]:after{  content: attr(data-tip);}
+    *[data-tip],*[data-tooltip]{position:relative;}
+    *[data-tooltip]:hover:after{ content: attr(data-tooltip);}
+    *[data-tip]:after,*[data-tooltip]:after { color:#fff; font-weight: normal; background:blue;  position:absolute; top:-10px; right:10px; border-radius: 5px;padding:5px 10px; font-size: 0.7em; white-space: nowrap; -webkit-animation-duration: .5s; animation-duration: .5s; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-name: Tooltip; animation-name: Tooltip;}
+/* Inline */
+    p *[data-tip]:after,p *[data-tooltip]:after{ line-height:1.4; padding:2px 4px; margin-left: -20%; top:-15px; font-size: 0.6em; right:auto; left:100%}
+    p b{ font-weight: bold;}
+/* Animation */
+    @-webkit-keyframes Tooltip { 
+        from {opacity: 0; -webkit-transform: translate3d(0, 10%, 0); transform: translate3d(0, 10%, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 
+    }
+    @keyframes Tooltip { 
+        from {opacity: 0; -webkit-transform: translate3d(0, 10%, 0); transform: translate3d(0, 10%, 0); visibility: visible; } 
+        to {opacity: 1; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); } 
+    }
+/* Custom */
+    .Space{ margin:20px}
+    .Space div{padding:3% 4%; margin-bottom: 20px; color:#fff; background:#000}
+    .Space p{margin:20px;line-height: 2.4;}

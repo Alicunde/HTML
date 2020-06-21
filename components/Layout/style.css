@@ -1,0 +1,37 @@
+.Layout > div:nth-child(1) { padding: 50px 0; grid-area: header; }
+.Layout > div:nth-child(2) { padding: 50px 0; grid-area: menu; }
+.Layout > div:nth-child(3) { padding: 50px 0; grid-area: main; }
+.Layout > div:nth-child(4) { padding: 20px 0; grid-area: footer; }
+
+.Layout {
+    max-width: 1300px; margin: 0 auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'footer footer footer footer footer footer';
+  
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.Layout > div {
+  background-color:#333;
+  text-align: center; color: #fff;
+  
+  font-size: 15px;
+}
+
+@media (max-width: 500px) {
+    .Layout {
+        grid-template-areas:
+            'header header header header header header'
+            'menu menu menu menu menu menu'
+            'main main main main main main '
+          'footer footer footer footer footer footer';
+      }
+}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+.Layout { font-family: 'Open Sans', sans-serif; }

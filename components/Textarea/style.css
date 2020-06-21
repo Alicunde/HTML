@@ -1,0 +1,16 @@
+/* General */
+    .Textarea{ padding: 20px;position: relative;}
+/* Textarea */
+    .Textarea textarea{ -webkit-appearance: none; overflow-x: hidden;outline: 0;margin: 0;display: block;resize: vertical;font-size: 14px;box-sizing: border-box;padding: 10px 15px;line-height: 23px;min-height: 300px;width: 100%;border-radius: 5px;border: 1px solid #ddd;}
+/* Disabled */
+    .Textarea textarea:read-only{ color: #888;padding-right: 50px;background-size: 15px auto;background-position: right 20px top 15px;background-image: url(lock.svg);background-repeat: no-repeat;}
+/* Scrollbars */
+    .Textarea textarea::-webkit-scrollbar{ width: 15px;border: none;border-radius: 10px;}
+    .Textarea textarea::-webkit-scrollbar-track{ background: 0 0;width: 5px;}
+    .Textarea textarea::-webkit-scrollbar-thumb{ background: #888;margin: 5px;border: 5px solid #fff;border-radius: 102px;width: 5px;}
+    .Textarea textarea::-webkit-scrollbar-thumb:hover{ background: #555;}
+/* Zoom iOS */
+    @supports (-webkit-touch-callout: none) { .Textarea textarea{ font-size: 16px;} }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Textarea textarea{ font-family: 'Open Sans', sans-serif; }

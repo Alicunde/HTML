@@ -1,0 +1,5 @@
+.Input {margin: 20px; position: relative;}
+.Input input{ outline: none; resize: vertical; font-size:0.9em; box-sizing: border-box; line-height: 3; padding:0px 15px; width: 100%; border-radius:0px 5px 5px 0px; border:1px solid #ddd; -webkit-border-radius:0px 5px 5px 0px; -moz-border-radius:0px 5px 5px 0px; -ms-border-radius:0px 5px 5px 0px; -o-border-radius:0px 5px 5px 0px; }
+.Input input{ order: 2; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -ms-border-radius: 5px; -o-border-radius: 5px; }
+/* Focus */
+    .Input em{ z-index: 10; border-radius:5px;font-size:0.9em; background: #eee; text-align: center; width: 50px; line-height: 2; font-style: normal; margin-top: 0.6em; margin-right: 0.6em; position: absolute; right: 0; top:0 ; -webkit-border-radius:5px ; -moz-border-radius:5px ; -ms-border-radius:5px ; -o-border-radius:5px ; }

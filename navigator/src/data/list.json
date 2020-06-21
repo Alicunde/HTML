@@ -1,0 +1,162 @@
+[
+    {
+        "title": "List"
+    },
+    
+    
+    {
+        "special": true,
+        "status": 1,
+        "name": "List",
+        "version": "4.0.7",
+        "path": "List",
+        "property": {
+            "html": true,
+            "icon": true,
+            "responsive": true,
+            "css": true
+        },
+        "rules": {},
+        "option": {
+            "icons": true,
+            "badges": true,
+            "childs": true,
+            "descriptions": true,
+            "contents": true
+        },
+        "information": "Este listado, aún ofreciendo un interface enriquecido, solo contiene los elementos semánticos de un listado."
+    },
+    {
+        "version": "1.0.9",
+
+        "status": 1,
+        "name": "Comments",
+        "path": "Comments",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "information": ""
+    },
+    {
+        "version": "2.6.1",
+        "status": 1,
+        "name": "Gallery",
+        "path": "Gallery",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "zoom": true,
+            "link": true,
+            "description": true,
+            "title": true
+        },
+        "information": "Galería de imágenes basadas en el sistema nativo de columnas de HTML. No reemplaza a los comunes sistemas Masonry. Por mucho que hemos querido reemplazarlo, no existe forma elegante de reordenar los elementos de ningún otro modo que no sea Javascript."
+    },
+    {
+        "version": "4.0.9",
+        "status": 1,
+        "name": "Articles",
+        "path": "Articles",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "options": {
+            "links": true,
+            "descriptions": true,
+            "dates": true,
+            "images": true
+        },
+        "information": ""
+    },
+    {
+        "version": "4.0.2",
+
+        "status": 1,
+        "name": "Products",
+        "path": "Products",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "responsive": true,
+            "css": true
+        },
+        "option": {
+            "brands": true,
+            "prices": true,
+            "descriptions": true,
+            "titles": true,
+            "discounts": true
+        }
+    },
+    {
+        "version": "4.0.6",
+        "status": 1,
+        "name": "Profiles",
+        "path": "Profiles",
+        "property": {
+            "html": true,
+            "img": true,
+            "css": true,
+            "responsive": true
+        },
+        "option": {
+            "verifications": true,
+            "vertical": false
+        }
+    },
+    
+    {
+        "version": "2.3.1",
+
+        "status": 10,
+        "name": "Table",
+        "path": "Table",
+        "property": {
+            "html": true,
+            "icon": true,
+            "img": true,
+            "responsive": true,
+            "css": true
+        },
+        "option": {
+            "id": true,
+            "edit": true,
+            "trash": true,
+            "price": true,
+            "header": true,
+            "footer": true
+        },
+        "information": "Una sencilla tabla con diferentes estilos sobre sus datos."
+    },
+    {
+        "version": "4.1.2",
+        "status": 1,
+        "name": "Chat",
+        "path": "Chat",
+        "property": {
+            "html": true,
+            "img": true,
+            "responsive": true,
+            "css": true
+        },
+        "option": {
+            "nicks": true,
+            "hours": true
+        },
+        "information": "Un chat ultra básico copiado de Whatsapp haciendo uso de la mínima cantidad de tags HTML y sin hacer uso de Javascript ni elementos de diseño."
+    }
+]

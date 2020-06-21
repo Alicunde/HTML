@@ -1,0 +1,10 @@
+### [Tooltip](components/Tooltip)
+#### HTML + CSS
+
+Tooltip without JavaScript and Hover animations.
+
+```
+<div data-tip="Hello!... i am tooltip!">Static tooltip</div>
+<div data-tooltip="Hello!... i am tooltip!">Hover tooltip</div>
+<p>That is a text with <b data-tip="Hello!!">small tooltip</b> and maybe you want a <b data-tooltip="Hello!!">hover tooltip</b>.</p>
+```

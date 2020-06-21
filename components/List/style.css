@@ -1,0 +1,45 @@
+.List { font-size: 0.7rem; padding: 20px;}
+/* General */
+    .List > ul{ padding: 0; margin: 0; background: rgb(194, 194, 194); overflow: hidden; border-radius: 5px;margin: 0; padding: 0px; border:1px solid #ddd; }
+    .List > ul > li{ position: relative; display: block; }
+    .List > ul > li > .List{ padding: 0%; background: transparent;}
+    .List > ul > li > .List > ul{ border:none; border-radius: 0px; padding: 10px 0px; position: relative; padding-left: 40px; overflow: hidden; }
+/* Line */
+    .List > ul > li > p,.List > ul > li > a{white-space: nowrap; text-decoration: none; color: #000;align-items:center; background: #fff;  margin: 0px; box-shadow: 0px 1px 2px rgba(0,0,0,0.1); z-index: 20; border-top: 1px solid #ddd;padding: 0.7rem 0.8rem 0.7rem .8rem;vertical-align: middle; display: flex; position: relative;}
+    .List > ul > li:first-child > p,.List > ul > li:first-child > a{ border-top:none}
+    .List > ul > li > a:hover{ cursor: pointer; background-color:#eee; }
+    /* Badges */
+        .List > ul > li > a > b{ margin-left: auto; margin-right:2rem; padding: 0px 0.4rem;  font-weight: normal; color: #fff; box-shadow: 0px 0px 0px 2px rgb(95, 95, 230); background: rgb(95, 95, 230);  border-radius: 1px; }
+        .List > ul > li > p > b{ margin-left: auto; padding: 0px 0.4rem; box-shadow: 0px 0px 0px 5px rgb(247, 247, 247); background: rgb(247, 247, 247);  font-weight: normal; color: #fff;  color: rgb(91, 91, 91);  border-radius: 11px; }
+    /* Icons */
+        .List > ul > li > p > i:first-child,.List > ul > li > a > i:first-child{ text-align: center; background: transparent;font-size:1.4em; margin-right: 10px; color: #aaa; }
+    /* Angle */
+        .List > ul > li > a:after{position: absolute; border: 2px solid #ccc; content: ""; transform: rotate(135deg);border-bottom: none; border-right: none; height: 8px; width: 8px; margin-top:-5px; top: 50%; right: 22px; text-align: center; line-height: 1rem; font-size: 1.4em; background: transparent;display: block; color: rgb(80, 113, 196); }
+    /* Title */
+        .List > ul > li > p > strong,.List > ul > li > a > strong{ white-space: nowrap; }
+        .List > ul > li > p > i + strong,.List > ul > li > a > i + strong{ margin-left: 25px; }
+    /* Description */
+        .List > ul > li > p > u,.List > ul > li > a > u{margin-left: 0.5rem; text-decoration: none; font-weight: normal;  color: #aaa; }
+    /* Link Focus */
+        .List > ul > li > a:focus { outline: none; background: rgb(227, 238, 255);}
+    /* Diagram */
+        .List > ul > li:after{ height: 100%; width: 1px; content: ""; display: block; left: 20px; top: 0; background: rgb(121, 121, 121); position: absolute;}
+        .List > ul > li > .List > ul > li > p:after,.List > ul > li > .List > ul > li > a:after{ content: "";  box-sizing: border-box; width:21px;height: 1px; background: rgb(121, 121, 121); border-right: 0; border-top: 0; position: absolute; left: -21px; top: 50%;margin-top: 1px; }
+        .List > ul > li > .List > ul > li > p:before,.List > ul > li > .List > ul > li > a:before{ content: ""; height:7px; box-sizing: border-box; width: 7px;z-index: 10; box-shadow: 0px 2px 2px rgba(0,0,0,0.4); background: rgb(95, 95, 230); border:2px solid #fff; border-radius: 120px; position: absolute; left: -23px; top: 50%; margin-top: -3px; }
+/* Placeholder */
+    .List .Placeholder{ padding: 20%; color: rgba(0, 0, 0, 0.543);text-align: center;  content: "TEST CONTENT"; display: block;}
+    .List .Placeholder:before{ content: "TEST CONTENT";letter-spacing: 2px; font-size: 15px;}
+    .List .Placeholder:after{ content: "CSS INDEPENDIENT"; display: block; font-size: 11px; color: rgba(0, 0, 0, 0.4);}
+/* Responsive */
+    @media (max-width: 400px) 
+        {
+            .List > ul > li > p > u,.List > ul > li > a > u{ display: none;}
+            .List > ul > li > .List > ul > li > p:after, .List > ul > li > .List > ul > li > a:after{ width: 9px; left: -9px;}
+            .List > ul > li > .List > ul{ padding-left: 20px;}
+            .List > ul > li:after{ left: 10px;}
+            .List > ul > li > p > strong > span,.List > ul > li > a > strong > span{ display: none;}
+            .List > ul > li > .List > ul > li > p:before,.List > ul > li > .List > ul > li > a:before{ display: none }
+        }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .List{ font-family: 'Open Sans', sans-serif; }

@@ -1,0 +1,7 @@
+[href$=".pdf"]::before{ content: "\f1c1"; font-family: "Icons"; color:rgba(0,0,0,0.2);}
+[href$=".jpg"]::before{ content: "\f1c5"; font-family: "Icons"; color:rgba(0,0,0,0.2);}
+[href$=".doc"]::before{ content: "\f1c2"; font-family: "Icons"; color:rgba(0,0,0,0.2);}
+[href$=".excel"]::before{ content: "\f1c3"; font-family: "Icons"; color:rgba(0,0,0,0.2);}
+
+[href$=".pdf"]::before,[href$=".jpg"]::before,[href$=".doc"]::before,[href$=".excel"]::before{ font-size:1.5em;margin-top: 0.1em; color: rgb(115, 113, 250); vertical-align: text-bottom; margin-right: .5em; }
+[href$=".pdf"],[href$=".jpg"],[href$=".doc"],[href$=".excel"]{ text-decoration: none;margin:0 0.3em; padding: .6em 1em .6em 0.8em;  font-size:0.8em;border:1px solid rgb(208, 208, 208); display: inline-block; color: #000; background: #ddd; border-radius: 0.4em; }
