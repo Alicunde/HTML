@@ -1,7 +1,6 @@
 ![alt text](navigator/public/screen.jpg)
 
 # HTML | [DEMO](http://html.systems/)
-## Pushing HTML components to the limit
 ### HTML +  CSS + JS
 
 Defining this repository is tricky. It is not a framework. I hope you like it and if you can improve a component leave us an issue.
