@@ -945,12 +945,12 @@ This component is very crazy. It consists of a circular input field based on a m
 </div>
 ```
 
-### [Background](components/Background)
+### [Pixelate](components/Pixelate)
 #### HTML + CSS
 
-Basically a DIV with a background with the possibility of adding a description based on the DIV title. Built to demonstrate the potential of pseudo-elements.
+Image rendering test
 
 ![alt text](navigator/public/components/Pixelate/presentation.jpg)
 ```
-<div class="Background" title="This is a pseudo-element"></div>
+<img alt="Test" class="Pixelate" src="test.jpg">
 ```

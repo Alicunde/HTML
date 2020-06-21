@@ -1,8 +1,8 @@
-### [Background](components/Background)
+### [Pixelate](components/Pixelate)
 #### HTML + CSS
 
-Basically a DIV with a background with the possibility of adding a description based on the DIV title. Built to demonstrate the potential of pseudo-elements.
+Image rendering test
 
 ```
-<div class="Background" title="This is a pseudo-element"></div>
+<img alt="Test" class="Pixelate" src="test.jpg">
 ```
