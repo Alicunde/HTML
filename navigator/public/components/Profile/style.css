@@ -26,3 +26,7 @@
     .Profile{ padding-left: 20px; padding-right: 20px;}
     .Profile > div:nth-child(2){ position: relative; margin-top: -30px; top:auto; left: auto;}
 }
+
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Profile{ font-family: 'Open Sans', sans-serif; }

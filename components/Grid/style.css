@@ -2,7 +2,7 @@
 /* Remember that this CSS is contingent on invalid HTML. If you want to make it valid, use the prefix data. */
 /* General */
     .Grid > div{ background: blue;height:60px;box-sizing: border-box; border:5px solid #fff}
-    .Grid { margin: 20px; display: flex; flex: 0 1 auto; flex-direction: row; flex-wrap: wrap;justify-content: space-between; }
+    .Grid { overflow: hidden; margin: 20px; display: flex; flex: 0 1 auto; flex-direction: row; flex-wrap: wrap;justify-content: space-between; }
 /* Width Direct */
     *[screen="0"]{ display:inline-block; max-width: 0px;}
     *[screen="20"]{ display:inline-block; max-width: 20px;}

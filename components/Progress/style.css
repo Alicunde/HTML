@@ -27,3 +27,6 @@ progress[value]::-webkit-progress-value{
     -o-transition: width 400ms ease-in-out;
     transition: width 400ms ease-in-out;
   }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Progress{ font-family: 'Open Sans', sans-serif; }

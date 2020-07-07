@@ -16,3 +16,6 @@
     .Prices > ul > li > ul:after{ height: 5px; width: 30px; border-radius: 2px; top: -3px; background: rgb(139, 139, 255); content: ""; display: block; position: absolute; left: 50%; margin-left: -15px;}
     .Prices > ul > li > ul > li{ display: block; padding: 0.4em 0; font-size: 0.8em;}
     .Prices > ul > li > a{ color: #fff; background: rgb(139, 139, 255); padding:0.5em 1.4em; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8em; border-radius: 10px; text-decoration: none;}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Prices { font-family: 'Open Sans', sans-serif; }

@@ -13,3 +13,6 @@
     .Switch input[type=checkbox]:checked{ border-color: rgb(104, 104, 194); background: rgb(139, 139, 255);}
     .Switch input[type=checkbox]:checked:before{ opacity: 1; background: #fff; left: 22px;}
     .Switch input[type=checkbox]:checked:after{ opacity: 1; border-color: rgb(73, 73, 182); -webkit-transform: scale(.7) rotate(45deg);transform: rotate(.7) rotate(45deg);}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Switch{ font-family: 'Open Sans', sans-serif; }

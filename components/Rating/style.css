@@ -16,3 +16,6 @@
     .Rating label + input:checked + * + * + * + * + * + * + *{ color: #ddd;}
 /* Value */
     .Rating input:checked:after{ padding:0px 10px; text-align: center; top: 5px; position: absolute; right: 5px; line-height: 25px ; width: 10px; border:1px solid #ddd; border-radius: 4px; content: attr(value); display: block;}
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Progress{ font-family: 'Open Sans', sans-serif; }

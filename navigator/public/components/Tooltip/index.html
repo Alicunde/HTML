@@ -2,17 +2,15 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Choice</title>
+        <title>Tooltip</title>
         <link rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
-        <div class="Choice">
-            <ul>
-                <li><input type="radio" checked="" name="gender"/>Picasso</li>
-                <li><input type="radio" name="gender" />Velázquez</li>
-                <li><input type="radio" name="gender" />Zurbaran</li>
-            </ul>
+        <div class="Space">
+            <div data-tip="Hello!... i am tooltip!">Static tooltip</div>
+            <div data-tooltip="Hello!... i am tooltip!">Hover tooltip</div>
+            <p>That is a text with <b data-tip="Hello!!">small tooltip</b> and maybe you want a <b data-tooltip="Hello!!">hover tooltip</b>.</p>
         </div>
     </body>
 </html>

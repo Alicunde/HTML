@@ -2,17 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Choice</title>
+        <title>Password</title>
+        <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
         <meta name="viewport" content="width=device-width" />
     </head>
     <body>
-        <div class="Choice">
-            <ul>
-                <li><input type="radio" checked="" name="gender"/>Picasso</li>
-                <li><input type="radio" name="gender" />Velázquez</li>
-                <li><input type="radio" name="gender" />Zurbaran</li>
-            </ul>
+        <div class="Password">
+            <input type="password" autocomplete="off" placeholder="">
+            <i></i>
+            <p class="valid">A lowercase letter</p>
+            <p class="invalid">A capital letter</p>
+            <p class="invalid">A number</p>
+            <p class="valid">Minimum 8 characters</p>
         </div>
     </body>
 </html>

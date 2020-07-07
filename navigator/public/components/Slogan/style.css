@@ -25,3 +25,6 @@
         .Slogan p{ width: 100%;}
         .Slogan q{ border-bottom: 1px solid #ddd;padding-bottom: 5%; margin-bottom: 5%;; width: 100%;}
     }
+/* Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+    .Slogan{ font-family: 'Open Sans', sans-serif; }
