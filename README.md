@@ -1,8 +1,9 @@
+# CRAZY HTML | [DEMO](http://html.systems/)
+### Public Domain
+
 ![alt text](navigator/public/screen.jpg)
 
 ![alt text](navigator/public/dark.jpg)
-# HTML | [DEMO](http://html.systems/)
-### Public Domain
 
 Defining this repository is tricky. It is not a framework. I hope you like it and if you can improve a component leave us an issue.
 
