@@ -1,5 +1,6 @@
-# HTML | [DEMO](http://html.systems/)
-### Public Domain
+# Crazy HTML just to play | [DEMO](http://html.systems/)
+## It is not a framework
+### Public Domain (give me a star, it makes me happy :D)
 
 ![alt text](navigator/public/screen.jpg)
 
