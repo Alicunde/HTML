@@ -14,7 +14,7 @@
 /* Focus */
     .Checkbox input[type='checkbox']:focus { box-shadow: 0 0 0 2px rgba(157, 157, 157, 0.5); } 
     .Checkbox input[type='checkbox']:checked { background: #444; } 
-    .Checkbox input[type='checkbox']:checked:after { opacity: 1;-webkit-transform: scale(1) rotate(45deg); transform: rotate(1) rotate(45deg); } 
+    .Checkbox input[type='checkbox']:checked:after { opacity: 1;-webkit-transform: scale(1) rotate(45deg); transform: scale(1) rotate(45deg); } 
 /* Selection */
     .Checkbox { -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
 /* Fonts */
